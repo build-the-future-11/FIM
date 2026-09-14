@@ -1,0 +1,13 @@
+2026-09-13 21:54:30,504 | INFO | Device: cpu
+2026-09-13 21:54:30,505 | INFO | Benchmark: lorenz
+2026-09-13 21:54:30,505 | INFO | Model: mlp
+2026-09-13 21:54:30,505 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:54:30,532 | INFO | Parameters: 2,112
+2026-09-13 21:54:30,533 | INFO | Training start
+2026-09-13 21:54:30,541 | INFO | Training complete
+2026-09-13 21:54:30,541 | INFO | Evaluation start
+2026-09-13 21:54:31,059 | INFO | Evaluation complete
+2026-09-13 21:54:31,116 | INFO | Saved checkpoint: results/compact_suite/compact_suite/lorenz_mlp/checkpoints/final_state.pt
+2026-09-13 21:54:31,116 | INFO | Saved summary: results/compact_suite/compact_suite/lorenz_mlp/metrics/summary.json
+2026-09-13 21:54:31,116 | INFO | Saved config: results/compact_suite/compact_suite/lorenz_mlp/configs/resolved_config.yaml
+2026-09-13 21:54:31,116 | INFO | Saved provenance: results/compact_suite/compact_suite/lorenz_mlp/metadata.json

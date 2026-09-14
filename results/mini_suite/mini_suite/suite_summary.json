@@ -1,0 +1,364 @@
+{
+  "benchmarks": [
+    "delayed_recall"
+  ],
+  "models": [
+    "fim_plus",
+    "transformer",
+    "ssm",
+    "deeponet",
+    "mlp"
+  ],
+  "runs": [
+    {
+      "benchmark": "delayed_recall",
+      "model": "fim_plus",
+      "result": {
+        "experiment": {
+          "name": "mini_suite"
+        },
+        "runtime": {
+          "seed": 42,
+          "device": "cpu",
+          "deterministic": true,
+          "results_root": "results/mini_suite"
+        },
+        "benchmark": {
+          "name": "DelayedRecallBenchmark",
+          "state_shape": [
+            33
+          ],
+          "horizon": 16,
+          "is_non_markovian": true,
+          "stochastic": false,
+          "dt": 1.0,
+          "dimension": 33,
+          "memory_dim": 32,
+          "delay": 8
+        },
+        "model": "FIMSystem",
+        "train_history": {
+          "train_loss": [
+            0.19043650726477304
+          ],
+          "train_rollout_loss": [
+            0.19043650726477304
+          ],
+          "val_loss": [
+            0.28855741024017334
+          ],
+          "val_rollout_loss": [
+            0.28855741024017334
+          ],
+          "lr": [
+            2.9999999999999997e-05
+          ],
+          "grad_norm": [
+            0.9999996576151212
+          ]
+        },
+        "parameters": 104620,
+        "metrics": {
+          "model_name": "FIMSystem",
+          "rollout_steps": 8,
+          "params": 104620,
+          "mse": 0.19758178293704987,
+          "mae": 0.3117504417896271,
+          "final_step_mse": 0.12373862415552139,
+          "final_step_mae": 0.2654559314250946,
+          "divergence_time": 0.0,
+          "stability_under_perturbation": 0.8352258660837869,
+          "latent_norm_drift": 3.780841827392578,
+          "retrieval_utilization": 0.0,
+          "throughput_items_per_sec": 662.451542712257,
+          "trajectory_fidelity": -0.08202516287565231,
+          "rollout_score": 0.8350160416998965
+        },
+        "evaluation": {
+          "mse_mean": 1.1799522638320923,
+          "mse_final": 1.1707711219787598
+        }
+      }
+    },
+    {
+      "benchmark": "delayed_recall",
+      "model": "transformer",
+      "result": {
+        "experiment": {
+          "name": "mini_suite"
+        },
+        "runtime": {
+          "seed": 42,
+          "device": "cpu",
+          "deterministic": true,
+          "results_root": "results/mini_suite"
+        },
+        "benchmark": {
+          "name": "DelayedRecallBenchmark",
+          "state_shape": [
+            33
+          ],
+          "horizon": 16,
+          "is_non_markovian": true,
+          "stochastic": false,
+          "dt": 1.0,
+          "dimension": 33,
+          "memory_dim": 32,
+          "delay": 8
+        },
+        "model": "TransformerFieldSystem",
+        "train_history": {
+          "train_loss": [
+            0.16386589407920837
+          ],
+          "train_rollout_loss": [
+            0.16386589407920837
+          ],
+          "val_loss": [
+            0.20352387428283691
+          ],
+          "val_rollout_loss": [
+            0.20352387428283691
+          ],
+          "lr": [
+            2.9999999999999997e-05
+          ],
+          "grad_norm": [
+            0.9999996540422892
+          ]
+        },
+        "parameters": 169537,
+        "metrics": {
+          "model_name": "TransformerFieldSystem",
+          "rollout_steps": 8,
+          "params": 169537,
+          "mse": 0.2490188628435135,
+          "mae": 0.3682868182659149,
+          "final_step_mse": 0.16121236979961395,
+          "final_step_mae": 0.313854843378067,
+          "divergence_time": 0.0,
+          "stability_under_perturbation": 0.8006523918894972,
+          "latent_norm_drift": 3.423513412475586,
+          "retrieval_utilization": 0.0,
+          "throughput_items_per_sec": 1327.00682833327,
+          "trajectory_fidelity": -0.03276324272155762,
+          "rollout_score": 0.8006284210339324
+        },
+        "evaluation": {
+          "mse_mean": 1.5250592231750488,
+          "mse_final": 1.5229986906051636
+        }
+      }
+    },
+    {
+      "benchmark": "delayed_recall",
+      "model": "ssm",
+      "result": {
+        "experiment": {
+          "name": "mini_suite"
+        },
+        "runtime": {
+          "seed": 42,
+          "device": "cpu",
+          "deterministic": true,
+          "results_root": "results/mini_suite"
+        },
+        "benchmark": {
+          "name": "DelayedRecallBenchmark",
+          "state_shape": [
+            33
+          ],
+          "horizon": 16,
+          "is_non_markovian": true,
+          "stochastic": false,
+          "dt": 1.0,
+          "dimension": 33,
+          "memory_dim": 32,
+          "delay": 8
+        },
+        "model": "SelectiveSSMSystem",
+        "train_history": {
+          "train_loss": [
+            0.24009246130784354
+          ],
+          "train_rollout_loss": [
+            0.24009246130784354
+          ],
+          "val_loss": [
+            0.2551475763320923
+          ],
+          "val_rollout_loss": [
+            0.2551475763320923
+          ],
+          "lr": [
+            2.9999999999999997e-05
+          ],
+          "grad_norm": [
+            0.999999721493135
+          ]
+        },
+        "parameters": 8164,
+        "metrics": {
+          "model_name": "SelectiveSSMSystem",
+          "rollout_steps": 8,
+          "params": 8164,
+          "mse": 0.30468836426734924,
+          "mae": 0.4194581210613251,
+          "final_step_mse": 0.2207621932029724,
+          "final_step_mae": 0.39096784591674805,
+          "divergence_time": 0.0,
+          "stability_under_perturbation": 0.7664704682620894,
+          "latent_norm_drift": 0.00704193115234375,
+          "retrieval_utilization": 0.0,
+          "throughput_items_per_sec": 1713.87646504038,
+          "trajectory_fidelity": -0.10610620677471161,
+          "rollout_score": 0.7664665581359364
+        },
+        "evaluation": {
+          "mse_mean": 1.4760944843292236,
+          "mse_final": 1.507168173789978
+        }
+      }
+    },
+    {
+      "benchmark": "delayed_recall",
+      "model": "deeponet",
+      "result": {
+        "experiment": {
+          "name": "mini_suite"
+        },
+        "runtime": {
+          "seed": 42,
+          "device": "cpu",
+          "deterministic": true,
+          "results_root": "results/mini_suite"
+        },
+        "benchmark": {
+          "name": "DelayedRecallBenchmark",
+          "state_shape": [
+            33
+          ],
+          "horizon": 16,
+          "is_non_markovian": true,
+          "stochastic": false,
+          "dt": 1.0,
+          "dimension": 33,
+          "memory_dim": 32,
+          "delay": 8
+        },
+        "model": "DeepONetFieldSystem",
+        "train_history": {
+          "train_loss": [
+            0.11665278673171997
+          ],
+          "train_rollout_loss": [
+            0.11665278673171997
+          ],
+          "val_loss": [
+            0.1237463653087616
+          ],
+          "val_rollout_loss": [
+            0.1237463653087616
+          ],
+          "lr": [
+            2.9999999999999997e-05
+          ],
+          "grad_norm": [
+            0.0577281894494078
+          ]
+        },
+        "parameters": 6753,
+        "metrics": {
+          "model_name": "DeepONetFieldSystem",
+          "rollout_steps": 8,
+          "params": 6753,
+          "mse": 0.15794573724269867,
+          "mae": 0.2953791618347168,
+          "final_step_mse": 0.13740822672843933,
+          "final_step_mae": 0.28143179416656494,
+          "divergence_time": 0.0,
+          "stability_under_perturbation": 0.8635984746762357,
+          "latent_norm_drift": 0.010576486587524414,
+          "retrieval_utilization": 0.0,
+          "throughput_items_per_sec": 3402.2270128312393,
+          "trajectory_fidelity": -0.1410072147846222,
+          "rollout_score": 0.8635983257567844
+        },
+        "evaluation": {
+          "mse_mean": 1.2800514698028564,
+          "mse_final": 1.2800509929656982
+        }
+      }
+    },
+    {
+      "benchmark": "delayed_recall",
+      "model": "mlp",
+      "result": {
+        "experiment": {
+          "name": "mini_suite"
+        },
+        "runtime": {
+          "seed": 42,
+          "device": "cpu",
+          "deterministic": true,
+          "results_root": "results/mini_suite"
+        },
+        "benchmark": {
+          "name": "DelayedRecallBenchmark",
+          "state_shape": [
+            33
+          ],
+          "horizon": 16,
+          "is_non_markovian": true,
+          "stochastic": false,
+          "dt": 1.0,
+          "dimension": 33,
+          "memory_dim": 32,
+          "delay": 8
+        },
+        "model": "ShapeAwareMLP",
+        "train_history": {
+          "train_loss": [
+            0.14861012498537698
+          ],
+          "train_rollout_loss": [
+            0.14861012498537698
+          ],
+          "val_loss": [
+            0.13792243599891663
+          ],
+          "val_rollout_loss": [
+            0.13792243599891663
+          ],
+          "lr": [
+            2.9999999999999997e-05
+          ],
+          "grad_norm": [
+            0.08756111728022782
+          ]
+        },
+        "parameters": 2177,
+        "metrics": {
+          "model_name": "ShapeAwareMLP",
+          "rollout_steps": 8,
+          "params": 2177,
+          "mse": 0.19657471776008606,
+          "mae": 0.3141838312149048,
+          "final_step_mse": 0.10878681391477585,
+          "final_step_mae": 0.2692653238773346,
+          "divergence_time": 0.0,
+          "stability_under_perturbation": 0.8357221478252423,
+          "latent_norm_drift": 0.0,
+          "retrieval_utilization": 0.0,
+          "throughput_items_per_sec": 28867.735288016727,
+          "trajectory_fidelity": -0.025999465957283974,
+          "rollout_score": 0.8357188106664482
+        },
+        "evaluation": {
+          "mse_mean": 1.3382021188735962,
+          "mse_final": 1.3379870653152466
+        }
+      }
+    }
+  ]
+}

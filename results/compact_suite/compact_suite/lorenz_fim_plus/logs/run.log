@@ -1,0 +1,13 @@
+2026-09-13 21:54:25,287 | INFO | Device: cpu
+2026-09-13 21:54:25,287 | INFO | Benchmark: lorenz
+2026-09-13 21:54:25,287 | INFO | Model: fim_plus
+2026-09-13 21:54:25,287 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:54:26,528 | INFO | Parameters: 104,620
+2026-09-13 21:54:26,528 | INFO | Training start
+2026-09-13 21:54:26,696 | INFO | Training complete
+2026-09-13 21:54:26,696 | INFO | Evaluation start
+2026-09-13 21:54:28,066 | INFO | Evaluation complete
+2026-09-13 21:54:28,174 | INFO | Saved checkpoint: results/compact_suite/compact_suite/lorenz_fim_plus/checkpoints/final_state.pt
+2026-09-13 21:54:28,174 | INFO | Saved summary: results/compact_suite/compact_suite/lorenz_fim_plus/metrics/summary.json
+2026-09-13 21:54:28,174 | INFO | Saved config: results/compact_suite/compact_suite/lorenz_fim_plus/configs/resolved_config.yaml
+2026-09-13 21:54:28,174 | INFO | Saved provenance: results/compact_suite/compact_suite/lorenz_fim_plus/metadata.json

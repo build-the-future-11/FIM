@@ -1,0 +1,7 @@
+benchmark,comparison,variant,n_pairs,mean_delta_rollout_mse,std_delta_rollout_mse,min_delta_rollout_mse,max_delta_rollout_mse,seeds_variant_better,seeds_full_better,exact_sign_pvalue,interpretation
+delayed_recall,no_memory_minus_full,no_memory,3,-8.779764175415039e-05,0.00014269659440194264,-0.0002524256706237793,4.76837158203125e-07,2,1,1.0,negative favors the reduced variant; positive favors full
+delayed_recall,no_retrieval_minus_full,no_retrieval,3,-8.779764175415039e-05,0.00014269659440194264,-0.0002524256706237793,4.76837158203125e-07,2,1,1.0,negative favors the reduced variant; positive favors full
+delayed_recall,no_salience_gating_minus_full,no_salience_gating,3,-0.0001060167948404948,0.0001526490817706884,-0.0002809762954711914,0.0,2,0,0.5,negative favors the reduced variant; positive favors full
+lorenz96,no_memory_minus_full,no_memory,3,7.979075113932292e-05,0.03022837758783624,-0.031505703926086426,0.028738081455230713,1,2,1.0,negative favors the reduced variant; positive favors full
+lorenz96,no_retrieval_minus_full,no_retrieval,3,7.979075113932292e-05,0.03022837758783624,-0.031505703926086426,0.028738081455230713,1,2,1.0,negative favors the reduced variant; positive favors full
+lorenz96,no_salience_gating_minus_full,no_salience_gating,3,0.04092961549758911,0.1001777974058947,-0.030019760131835938,0.15552592277526855,2,1,1.0,negative favors the reduced variant; positive favors full

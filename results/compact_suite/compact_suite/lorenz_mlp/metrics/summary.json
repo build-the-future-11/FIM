@@ -1,0 +1,79 @@
+{
+  "experiment": {
+    "name": "compact_suite"
+  },
+  "runtime": {
+    "seed": 42,
+    "data_seed": null,
+    "model_seed": null,
+    "train_seed": null,
+    "eval_seed": null,
+    "device": "cpu",
+    "deterministic": true,
+    "results_root": "results/compact_suite"
+  },
+  "benchmark": {
+    "name": "Lorenz96Benchmark",
+    "state_shape": [
+      32
+    ],
+    "horizon": 100,
+    "is_non_markovian": false,
+    "stochastic": false,
+    "dt": 0.01,
+    "dimension": 32,
+    "forcing": 8.0,
+    "burn_in": 200
+  },
+  "model": "ShapeAwareMLP",
+  "train_history": {
+    "train_loss": [
+      15.97360610961914
+    ],
+    "train_rollout_loss": [
+      15.97360610961914
+    ],
+    "val_loss": [
+      14.44211483001709
+    ],
+    "val_rollout_loss": [
+      14.44211483001709
+    ],
+    "lr": [
+      0.0003
+    ],
+    "grad_norm": [
+      0.999999645648066
+    ]
+  },
+  "parameters": 2112,
+  "seed_streams": {
+    "base": 42,
+    "data": 10042,
+    "model": 20042,
+    "train": 30042,
+    "evaluation": 40042
+  },
+  "generated_dataset_sha256": "0b631ad156e5e748c906891cae29279a4f83cc7ecd4361e8790b6f291f1557bc",
+  "split_indices_sha256": "7e62d5a021dbb968c17247d3bd25dd8556e571c6117c245aba391e8455dbc7b9",
+  "metrics": {
+    "model_name": "ShapeAwareMLP",
+    "rollout_steps": 8,
+    "params": 2112,
+    "mse": 21.18230438232422,
+    "mae": 3.72873854637146,
+    "final_step_mse": 21.149948120117188,
+    "final_step_mae": 3.753574848175049,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.045081035734172326,
+    "latent_norm_drift": 0.0,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 23627.884540957606,
+    "trajectory_fidelity": 0.028989726677536964,
+    "rollout_score": 0.04508097908875696
+  },
+  "evaluation": {
+    "mse_mean": 17.669178009033203,
+    "mse_final": 17.659934997558594
+  }
+}

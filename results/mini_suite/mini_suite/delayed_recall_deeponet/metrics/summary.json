@@ -1,0 +1,66 @@
+{
+  "experiment": {
+    "name": "mini_suite"
+  },
+  "runtime": {
+    "seed": 42,
+    "device": "cpu",
+    "deterministic": true,
+    "results_root": "results/mini_suite"
+  },
+  "benchmark": {
+    "name": "DelayedRecallBenchmark",
+    "state_shape": [
+      33
+    ],
+    "horizon": 16,
+    "is_non_markovian": true,
+    "stochastic": false,
+    "dt": 1.0,
+    "dimension": 33,
+    "memory_dim": 32,
+    "delay": 8
+  },
+  "model": "DeepONetFieldSystem",
+  "train_history": {
+    "train_loss": [
+      0.11665278673171997
+    ],
+    "train_rollout_loss": [
+      0.11665278673171997
+    ],
+    "val_loss": [
+      0.1237463653087616
+    ],
+    "val_rollout_loss": [
+      0.1237463653087616
+    ],
+    "lr": [
+      2.9999999999999997e-05
+    ],
+    "grad_norm": [
+      0.0577281894494078
+    ]
+  },
+  "parameters": 6753,
+  "metrics": {
+    "model_name": "DeepONetFieldSystem",
+    "rollout_steps": 8,
+    "params": 6753,
+    "mse": 0.15794573724269867,
+    "mae": 0.2953791618347168,
+    "final_step_mse": 0.13740822672843933,
+    "final_step_mae": 0.28143179416656494,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.8635984746762357,
+    "latent_norm_drift": 0.010576486587524414,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 3402.2270128312393,
+    "trajectory_fidelity": -0.1410072147846222,
+    "rollout_score": 0.8635983257567844
+  },
+  "evaluation": {
+    "mse_mean": 1.2800514698028564,
+    "mse_final": 1.2800509929656982
+  }
+}

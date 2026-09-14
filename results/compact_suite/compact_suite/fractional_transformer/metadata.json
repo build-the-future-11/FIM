@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-09-13T16:24:50.300877+00:00",
+  "ended_utc": "2026-09-13T16:25:36.013735+00:00",
+  "git": {
+    "available": false,
+    "commit": null,
+    "dirty": null
+  },
+  "source_identity": "b1531e6b4ac3c2681b93624de4900c6033cba1e039f2427fc69756cb64e4b0fd",
+  "identity_kind": "sha256_source_tree",
+  "config_sha256": "21600c400d0a7245ca7beb392c514c3b7130d0446f0649f91f108103b54dac64",
+  "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "processor": "arm",
+  "torch_device": "cpu",
+  "torch_cuda_available": false,
+  "torch_mps_available": true,
+  "dependencies": {
+    "torch": "2.14.0",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.1",
+    "PyYAML": "6.0.3",
+    "scipy": "1.17.1",
+    "pandas": "3.0.5"
+  },
+  "accelerator": "arm",
+  "runtime_seconds": 45.73603708399969,
+  "seed_streams": {
+    "base": 42,
+    "data": 10042,
+    "model": 20042,
+    "train": 30042,
+    "evaluation": 40042
+  },
+  "dataset": {
+    "kind": "generated_at_runtime",
+    "benchmark": {
+      "name": "fractional",
+      "config": {}
+    },
+    "generated_dataset_sha256": "3df8f32390ff4214bc3b6742a777d90dbccad5919dba5a88e2d36917dc5cf896",
+    "split_indices_sha256": "7e62d5a021dbb968c17247d3bd25dd8556e571c6117c245aba391e8455dbc7b9",
+    "evaluation_data_sha256": null
+  },
+  "artifacts": {
+    "config": "results/compact_suite/compact_suite/fractional_transformer/configs/resolved_config.yaml",
+    "summary": "results/compact_suite/compact_suite/fractional_transformer/metrics/summary.json",
+    "checkpoint": "results/compact_suite/compact_suite/fractional_transformer/checkpoints/final_state.pt",
+    "predictions": "results/compact_suite/compact_suite/fractional_transformer/metrics/predictions.pt",
+    "per_example": "results/compact_suite/compact_suite/fractional_transformer/metrics/per_example.jsonl"
+  }
+}

@@ -1,0 +1,24 @@
+2026-09-02 19:44:44,095 | INFO | Device: cpu
+2026-09-02 19:44:44,095 | INFO | Benchmark: delayed_recall
+2026-09-02 19:44:44,095 | INFO | Model: fim_plus
+2026-09-02 19:44:44,096 | INFO | Seed: 11
+2026-09-02 19:44:44,400 | INFO | Parameters: 405,836
+2026-09-02 19:44:44,544 | INFO | Training start
+2026-09-02 19:44:45,727 | INFO | Training complete
+2026-09-02 19:44:45,727 | INFO | Evaluation start
+2026-09-02 19:44:47,128 | INFO | Evaluation complete
+2026-09-02 19:44:47,145 | INFO | Saved checkpoint: results/runner_smoke/current_ablation_delayed_recall_full_s11/delayed_recall_fim_plus/checkpoints/final_state.pt
+2026-09-02 19:44:47,146 | INFO | Saved summary: results/runner_smoke/current_ablation_delayed_recall_full_s11/delayed_recall_fim_plus/metrics/summary.json
+2026-09-02 19:44:47,146 | INFO | Saved config: results/runner_smoke/current_ablation_delayed_recall_full_s11/delayed_recall_fim_plus/configs/resolved_config.yaml
+2026-09-02 19:45:44,897 | INFO | Device: cpu
+2026-09-02 19:45:44,903 | INFO | Benchmark: delayed_recall
+2026-09-02 19:45:44,904 | INFO | Model: fim_plus
+2026-09-02 19:45:44,904 | INFO | Seed: 11
+2026-09-02 19:45:58,322 | INFO | Parameters: 405,836
+2026-09-02 19:46:05,226 | INFO | Training start
+2026-09-02 19:47:15,434 | INFO | Training complete
+2026-09-02 19:47:15,571 | INFO | Evaluation start
+2026-09-02 19:47:49,115 | INFO | Evaluation complete
+2026-09-02 19:47:51,743 | INFO | Saved checkpoint: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/runner_smoke/current_ablation_delayed_recall_full_s11/delayed_recall_fim_plus/checkpoints/final_state.pt
+2026-09-02 19:47:51,743 | INFO | Saved summary: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/runner_smoke/current_ablation_delayed_recall_full_s11/delayed_recall_fim_plus/metrics/summary.json
+2026-09-02 19:47:51,743 | INFO | Saved config: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/runner_smoke/current_ablation_delayed_recall_full_s11/delayed_recall_fim_plus/configs/resolved_config.yaml

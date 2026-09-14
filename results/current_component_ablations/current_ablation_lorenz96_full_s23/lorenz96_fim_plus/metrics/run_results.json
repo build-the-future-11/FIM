@@ -1,0 +1,9 @@
+{
+  "rollout_mse": 0.6707999110221863,
+  "final_step_mse": 2.0069692134857178,
+  "rollout_mae": 0.3829493820667267,
+  "final_step_mae": 0.7404987812042236,
+  "rollout_steps": 30,
+  "evaluation_batch_size": 32,
+  "salience_available": true
+}

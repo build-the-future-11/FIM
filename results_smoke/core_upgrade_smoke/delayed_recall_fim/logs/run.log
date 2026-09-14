@@ -1,0 +1,12 @@
+2026-05-12 13:39:44,294 | INFO | Device: cpu
+2026-05-12 13:39:44,295 | INFO | Benchmark: delayed_recall
+2026-05-12 13:39:44,295 | INFO | Model: fim
+2026-05-12 13:39:44,295 | INFO | Seed: 7
+2026-05-12 13:39:44,300 | INFO | Parameters: 27,740
+2026-05-12 13:39:44,301 | INFO | Training start
+2026-05-12 13:39:44,446 | INFO | Training complete
+2026-05-12 13:39:44,447 | INFO | Evaluation start
+2026-05-12 13:39:46,000 | INFO | Evaluation complete
+2026-05-12 13:39:46,006 | INFO | Saved checkpoint: results_smoke/core_upgrade_smoke/delayed_recall_fim/checkpoints/final_state.pt
+2026-05-12 13:39:46,007 | INFO | Saved summary: results_smoke/core_upgrade_smoke/delayed_recall_fim/metrics/summary.json
+2026-05-12 13:39:46,007 | INFO | Saved config: results_smoke/core_upgrade_smoke/delayed_recall_fim/configs/resolved_config.yaml

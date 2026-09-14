@@ -1,0 +1,13 @@
+2026-09-13 21:54:31,118 | INFO | Device: cpu
+2026-09-13 21:54:31,118 | INFO | Benchmark: burgers
+2026-09-13 21:54:31,118 | INFO | Model: fim_plus
+2026-09-13 21:54:31,118 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:54:31,124 | INFO | Parameters: 104,620
+2026-09-13 21:54:31,124 | INFO | Training start
+2026-09-13 21:54:31,188 | INFO | Training complete
+2026-09-13 21:54:31,189 | INFO | Evaluation start
+2026-09-13 21:54:32,294 | INFO | Evaluation complete
+2026-09-13 21:54:32,353 | INFO | Saved checkpoint: results/compact_suite/compact_suite/burgers_fim_plus/checkpoints/final_state.pt
+2026-09-13 21:54:32,353 | INFO | Saved summary: results/compact_suite/compact_suite/burgers_fim_plus/metrics/summary.json
+2026-09-13 21:54:32,353 | INFO | Saved config: results/compact_suite/compact_suite/burgers_fim_plus/configs/resolved_config.yaml
+2026-09-13 21:54:32,354 | INFO | Saved provenance: results/compact_suite/compact_suite/burgers_fim_plus/metadata.json

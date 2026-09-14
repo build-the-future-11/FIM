@@ -1,0 +1,12 @@
+2026-09-02 21:31:50,738 | INFO | Device: mps
+2026-09-02 21:31:50,741 | INFO | Benchmark: lorenz96
+2026-09-02 21:31:50,741 | INFO | Model: fim_plus
+2026-09-02 21:31:50,741 | INFO | Seed: 23
+2026-09-02 21:31:50,830 | INFO | Parameters: 405,836
+2026-09-02 21:31:51,138 | INFO | Training start
+2026-09-02 21:34:37,875 | INFO | Training complete
+2026-09-02 21:34:37,930 | INFO | Evaluation start
+2026-09-02 21:34:38,888 | INFO | Evaluation complete
+2026-09-02 21:34:38,981 | INFO | Saved checkpoint: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_lorenz96_no_salience_gating_s23/lorenz96_fim_plus/checkpoints/final_state.pt
+2026-09-02 21:34:38,981 | INFO | Saved summary: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_lorenz96_no_salience_gating_s23/lorenz96_fim_plus/metrics/summary.json
+2026-09-02 21:34:38,981 | INFO | Saved config: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_lorenz96_no_salience_gating_s23/lorenz96_fim_plus/configs/resolved_config.yaml

@@ -1,0 +1,66 @@
+{
+  "experiment": {
+    "name": "smoke_delayed"
+  },
+  "runtime": {
+    "seed": 42,
+    "device": "cpu",
+    "deterministic": true,
+    "results_root": "results"
+  },
+  "benchmark": {
+    "name": "DelayedRecallBenchmark",
+    "state_shape": [
+      33
+    ],
+    "horizon": 16,
+    "is_non_markovian": true,
+    "stochastic": false,
+    "dt": 1.0,
+    "dimension": 33,
+    "memory_dim": 32,
+    "delay": 8
+  },
+  "model": "FIMSystem",
+  "train_history": {
+    "train_loss": [
+      0.1709935168425242
+    ],
+    "train_rollout_loss": [
+      0.1709935168425242
+    ],
+    "val_loss": [
+      0.22225333750247955
+    ],
+    "val_rollout_loss": [
+      0.22225333750247955
+    ],
+    "lr": [
+      2.9999999999999997e-05
+    ],
+    "grad_norm": [
+      0.9999996746156791
+    ]
+  },
+  "parameters": 104620,
+  "metrics": {
+    "model_name": "FIMSystem",
+    "rollout_steps": 50,
+    "params": 104620,
+    "mse": 0.7887279391288757,
+    "mae": 0.7019438743591309,
+    "final_step_mse": 1.0326008796691895,
+    "final_step_mae": 0.813231885433197,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.5657497470898256,
+    "latent_norm_drift": 4.0590362548828125,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 861.7515883488659,
+    "trajectory_fidelity": 0.004908443428575993,
+    "rollout_score": 0.5590565105652723
+  },
+  "evaluation": {
+    "mse_mean": 1.3573558330535889,
+    "mse_final": 1.3399766683578491
+  }
+}

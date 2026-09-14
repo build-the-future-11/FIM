@@ -1,0 +1,45 @@
+{
+  "source": "Paper-reported compact results from Final FIM.pdf",
+  "lorenz_full": {
+    "train_last": 3.3605,
+    "val_last": 3.15,
+    "rollout_mse": 3.0432,
+    "final_step_mse": 3.3281
+  },
+  "burgers": {
+    "train_last": 0.7209,
+    "val_last": 0.725,
+    "rollout_mse": 0.64,
+    "final_step_mse": 0.6409
+  },
+  "fractional": {
+    "train_last": 0.0164,
+    "val_last": 0.0164,
+    "rollout_mse": 0.0177,
+    "final_step_mse": 0.0161
+  },
+  "reaction_diffusion": {
+    "train_last": 0.4867,
+    "val_last": 0.4868,
+    "rollout_mse": 0.489,
+    "final_step_mse": 0.4891
+  },
+  "kuramoto": {
+    "train_last": 14.159,
+    "val_last": 14.7229,
+    "rollout_mse": 16.356,
+    "final_step_mse": 16.3321
+  },
+  "levy": {
+    "train_last": 20.1063,
+    "val_last": 7.6519,
+    "rollout_mse": 2.3768,
+    "final_step_mse": 5.4409
+  },
+  "ablation_lorenz": {
+    "full": 1.317169,
+    "no_memory": 1.317169,
+    "no_spectral_mixing": 0.869918,
+    "no_retrieval": 1.317169
+  }
+}

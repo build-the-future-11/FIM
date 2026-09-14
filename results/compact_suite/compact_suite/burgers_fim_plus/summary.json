@@ -1,0 +1,78 @@
+{
+  "experiment": {
+    "name": "compact_suite"
+  },
+  "runtime": {
+    "seed": 42,
+    "data_seed": null,
+    "model_seed": null,
+    "train_seed": null,
+    "eval_seed": null,
+    "device": "cpu",
+    "deterministic": true,
+    "results_root": "results/compact_suite"
+  },
+  "benchmark": {
+    "name": "BurgersBenchmark",
+    "state_shape": [
+      64
+    ],
+    "horizon": 100,
+    "is_non_markovian": false,
+    "stochastic": false,
+    "dt": 0.01,
+    "dimension": 64,
+    "viscosity": 0.01
+  },
+  "model": "FIMSystem",
+  "train_history": {
+    "train_loss": [
+      0.8412822484970093
+    ],
+    "train_rollout_loss": [
+      0.8412822484970093
+    ],
+    "val_loss": [
+      0.7459014058113098
+    ],
+    "val_rollout_loss": [
+      0.7459014058113098
+    ],
+    "lr": [
+      0.0003
+    ],
+    "grad_norm": [
+      0.9999999255576412
+    ]
+  },
+  "parameters": 104620,
+  "seed_streams": {
+    "base": 42,
+    "data": 10042,
+    "model": 20042,
+    "train": 30042,
+    "evaluation": 40042
+  },
+  "generated_dataset_sha256": "2cd30d4250ee33d520029d7b062b27d7f81835da0c22357f1343b09d467064e1",
+  "split_indices_sha256": "7e62d5a021dbb968c17247d3bd25dd8556e571c6117c245aba391e8455dbc7b9",
+  "metrics": {
+    "model_name": "FIMSystem",
+    "rollout_steps": 8,
+    "params": 104620,
+    "mse": 0.7341580390930176,
+    "mae": 0.7231094837188721,
+    "final_step_mse": 0.7267318964004517,
+    "final_step_mae": 0.7185954451560974,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.5780190458315461,
+    "latent_norm_drift": 6.8374176025390625,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 1328.324443091694,
+    "trajectory_fidelity": -0.10734332352876663,
+    "rollout_score": 0.5766487122033066
+  },
+  "evaluation": {
+    "mse_mean": 0.7474148273468018,
+    "mse_final": 0.7145715951919556
+  }
+}

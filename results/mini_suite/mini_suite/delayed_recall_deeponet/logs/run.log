@@ -1,0 +1,12 @@
+2026-05-12 13:27:27,610 | INFO | Device: cpu
+2026-05-12 13:27:27,611 | INFO | Benchmark: delayed_recall
+2026-05-12 13:27:27,611 | INFO | Model: deeponet
+2026-05-12 13:27:27,611 | INFO | Seed: 42
+2026-05-12 13:27:27,612 | INFO | Parameters: 6,753
+2026-05-12 13:27:27,612 | INFO | Training start
+2026-05-12 13:27:27,657 | INFO | Training complete
+2026-05-12 13:27:27,657 | INFO | Evaluation start
+2026-05-12 13:27:28,450 | INFO | Evaluation complete
+2026-05-12 13:27:28,452 | INFO | Saved checkpoint: results/mini_suite/mini_suite/delayed_recall_deeponet/checkpoints/final_state.pt
+2026-05-12 13:27:28,452 | INFO | Saved summary: results/mini_suite/mini_suite/delayed_recall_deeponet/metrics/summary.json
+2026-05-12 13:27:28,452 | INFO | Saved config: results/mini_suite/mini_suite/delayed_recall_deeponet/configs/resolved_config.yaml

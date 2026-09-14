@@ -1,0 +1,12 @@
+2026-05-12 13:27:25,607 | INFO | Device: cpu
+2026-05-12 13:27:25,607 | INFO | Benchmark: delayed_recall
+2026-05-12 13:27:25,607 | INFO | Model: transformer
+2026-05-12 13:27:25,607 | INFO | Seed: 42
+2026-05-12 13:27:25,613 | INFO | Parameters: 169,537
+2026-05-12 13:27:25,614 | INFO | Training start
+2026-05-12 13:27:25,886 | INFO | Training complete
+2026-05-12 13:27:25,887 | INFO | Evaluation start
+2026-05-12 13:27:26,765 | INFO | Evaluation complete
+2026-05-12 13:27:26,772 | INFO | Saved checkpoint: results/mini_suite/mini_suite/delayed_recall_transformer/checkpoints/final_state.pt
+2026-05-12 13:27:26,772 | INFO | Saved summary: results/mini_suite/mini_suite/delayed_recall_transformer/metrics/summary.json
+2026-05-12 13:27:26,772 | INFO | Saved config: results/mini_suite/mini_suite/delayed_recall_transformer/configs/resolved_config.yaml

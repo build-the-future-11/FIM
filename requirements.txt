@@ -1,0 +1,15 @@
+torch>=2.0
+numpy>=1.23
+scipy>=1.10
+matplotlib>=3.7
+seaborn>=0.13
+plotly>=5.20
+scikit-learn>=1.3
+tqdm>=4.65
+pandas>=2.0
+umap-learn>=0.5.5
+joblib>=1.3
+pyyaml>=6.0
+weasyprint>=69,<70
+ipython>=8.0
+pytest>=8.0

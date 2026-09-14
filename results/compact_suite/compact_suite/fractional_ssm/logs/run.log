@@ -1,0 +1,13 @@
+2026-09-13 21:55:36,039 | INFO | Device: cpu
+2026-09-13 21:55:36,039 | INFO | Benchmark: fractional
+2026-09-13 21:55:36,039 | INFO | Model: ssm
+2026-09-13 21:55:36,039 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:55:36,043 | INFO | Parameters: 8,164
+2026-09-13 21:55:36,043 | INFO | Training start
+2026-09-13 21:55:36,200 | INFO | Training complete
+2026-09-13 21:55:36,201 | INFO | Evaluation start
+2026-09-13 21:55:46,879 | INFO | Evaluation complete
+2026-09-13 21:55:46,947 | INFO | Saved checkpoint: results/compact_suite/compact_suite/fractional_ssm/checkpoints/final_state.pt
+2026-09-13 21:55:46,948 | INFO | Saved summary: results/compact_suite/compact_suite/fractional_ssm/metrics/summary.json
+2026-09-13 21:55:46,948 | INFO | Saved config: results/compact_suite/compact_suite/fractional_ssm/configs/resolved_config.yaml
+2026-09-13 21:55:46,948 | INFO | Saved provenance: results/compact_suite/compact_suite/fractional_ssm/metadata.json

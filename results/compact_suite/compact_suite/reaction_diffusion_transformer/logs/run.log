@@ -1,0 +1,6 @@
+2026-09-13 21:57:37,507 | INFO | Device: cpu
+2026-09-13 21:57:37,507 | INFO | Benchmark: reaction_diffusion
+2026-09-13 21:57:37,507 | INFO | Model: transformer
+2026-09-13 21:57:37,507 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:57:37,531 | INFO | Parameters: 169,858
+2026-09-13 21:57:37,531 | INFO | Training start

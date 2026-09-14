@@ -1,0 +1,78 @@
+{
+  "experiment": {
+    "name": "compact_suite"
+  },
+  "runtime": {
+    "seed": 42,
+    "data_seed": null,
+    "model_seed": null,
+    "train_seed": null,
+    "eval_seed": null,
+    "device": "cpu",
+    "deterministic": true,
+    "results_root": "results/compact_suite"
+  },
+  "benchmark": {
+    "name": "BurgersBenchmark",
+    "state_shape": [
+      64
+    ],
+    "horizon": 100,
+    "is_non_markovian": false,
+    "stochastic": false,
+    "dt": 0.01,
+    "dimension": 64,
+    "viscosity": 0.01
+  },
+  "model": "ShapeAwareMLP",
+  "train_history": {
+    "train_loss": [
+      0.6765453815460205
+    ],
+    "train_rollout_loss": [
+      0.6765453815460205
+    ],
+    "val_loss": [
+      0.6728475093841553
+    ],
+    "val_rollout_loss": [
+      0.6728475093841553
+    ],
+    "lr": [
+      0.0003
+    ],
+    "grad_norm": [
+      0.44634187191244906
+    ]
+  },
+  "parameters": 4192,
+  "seed_streams": {
+    "base": 42,
+    "data": 10042,
+    "model": 20042,
+    "train": 30042,
+    "evaluation": 40042
+  },
+  "generated_dataset_sha256": "2cd30d4250ee33d520029d7b062b27d7f81835da0c22357f1343b09d467064e1",
+  "split_indices_sha256": "7e62d5a021dbb968c17247d3bd25dd8556e571c6117c245aba391e8455dbc7b9",
+  "metrics": {
+    "model_name": "ShapeAwareMLP",
+    "rollout_steps": 8,
+    "params": 4192,
+    "mse": 0.6715550422668457,
+    "mae": 0.6919360756874084,
+    "final_step_mse": 0.6697967648506165,
+    "final_step_mae": 0.6892211437225342,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.5982500973888178,
+    "latent_norm_drift": 0.0,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 30413.509689605064,
+    "trajectory_fidelity": -0.02037976309657097,
+    "rollout_score": 0.5982453312718139
+  },
+  "evaluation": {
+    "mse_mean": 0.6723695993423462,
+    "mse_final": 0.6721885204315186
+  }
+}

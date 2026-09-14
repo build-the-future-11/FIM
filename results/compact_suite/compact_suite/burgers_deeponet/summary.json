@@ -1,0 +1,78 @@
+{
+  "experiment": {
+    "name": "compact_suite"
+  },
+  "runtime": {
+    "seed": 42,
+    "data_seed": null,
+    "model_seed": null,
+    "train_seed": null,
+    "eval_seed": null,
+    "device": "cpu",
+    "deterministic": true,
+    "results_root": "results/compact_suite"
+  },
+  "benchmark": {
+    "name": "BurgersBenchmark",
+    "state_shape": [
+      64
+    ],
+    "horizon": 100,
+    "is_non_markovian": false,
+    "stochastic": false,
+    "dt": 0.01,
+    "dimension": 64,
+    "viscosity": 0.01
+  },
+  "model": "DeepONetFieldSystem",
+  "train_history": {
+    "train_loss": [
+      0.6707333326339722
+    ],
+    "train_rollout_loss": [
+      0.6707333326339722
+    ],
+    "val_loss": [
+      0.664767861366272
+    ],
+    "val_rollout_loss": [
+      0.664767861366272
+    ],
+    "lr": [
+      0.0003
+    ],
+    "grad_norm": [
+      0.1750796610966469
+    ]
+  },
+  "parameters": 6753,
+  "seed_streams": {
+    "base": 42,
+    "data": 10042,
+    "model": 20042,
+    "train": 30042,
+    "evaluation": 40042
+  },
+  "generated_dataset_sha256": "2cd30d4250ee33d520029d7b062b27d7f81835da0c22357f1343b09d467064e1",
+  "split_indices_sha256": "7e62d5a021dbb968c17247d3bd25dd8556e571c6117c245aba391e8455dbc7b9",
+  "metrics": {
+    "model_name": "DeepONetFieldSystem",
+    "rollout_steps": 8,
+    "params": 6753,
+    "mse": 0.6641284227371216,
+    "mae": 0.6978456377983093,
+    "final_step_mse": 0.664090096950531,
+    "final_step_mae": 0.6978318691253662,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.6009151228148919,
+    "latent_norm_drift": 0.0006194114685058594,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 6346.269941445658,
+    "trajectory_fidelity": -0.008810710161924362,
+    "rollout_score": 0.6009151615565956
+  },
+  "evaluation": {
+    "mse_mean": 0.6714866161346436,
+    "mse_final": 0.6714856624603271
+  }
+}

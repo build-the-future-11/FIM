@@ -1,0 +1,52 @@
+[
+  {
+    "model": "DeepONetFieldSystem",
+    "benchmark": "DelayedRecallBenchmark",
+    "params": 6753,
+    "train_last": 0.11665278673171997,
+    "val_last": 0.1237463653087616,
+    "rollout_mse": 0.15794573724269867,
+    "final_step_mse": 0.13740822672843933,
+    "rollout_score": 0.8635983257567844
+  },
+  {
+    "model": "FIMSystem",
+    "benchmark": "DelayedRecallBenchmark",
+    "params": 104620,
+    "train_last": 0.19043650726477304,
+    "val_last": 0.28855741024017334,
+    "rollout_mse": 0.19758178293704987,
+    "final_step_mse": 0.12373862415552139,
+    "rollout_score": 0.8350160416998965
+  },
+  {
+    "model": "SelectiveSSMSystem",
+    "benchmark": "DelayedRecallBenchmark",
+    "params": 8164,
+    "train_last": 0.24009246130784354,
+    "val_last": 0.2551475763320923,
+    "rollout_mse": 0.30468836426734924,
+    "final_step_mse": 0.2207621932029724,
+    "rollout_score": 0.7664665581359364
+  },
+  {
+    "model": "ShapeAwareMLP",
+    "benchmark": "DelayedRecallBenchmark",
+    "params": 2177,
+    "train_last": 0.14861012498537698,
+    "val_last": 0.13792243599891663,
+    "rollout_mse": 0.19657471776008606,
+    "final_step_mse": 0.10878681391477585,
+    "rollout_score": 0.8357188106664482
+  },
+  {
+    "model": "TransformerFieldSystem",
+    "benchmark": "DelayedRecallBenchmark",
+    "params": 169537,
+    "train_last": 0.16386589407920837,
+    "val_last": 0.20352387428283691,
+    "rollout_mse": 0.2490188628435135,
+    "final_step_mse": 0.16121236979961395,
+    "rollout_score": 0.8006284210339324
+  }
+]

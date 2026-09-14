@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "updated_utc": "2026-09-02T14:17:57.993816+00:00",
+  "git_commit": "UNKNOWN",
+  "source_identity": "8d3bdfd227c5003d92551aa7dcc0e06fa5a7f6b8b2cc1e93e14fe83fb573e725",
+  "identity_kind": "sha256_source_tree",
+  "scientific_boundary": "Fresh current-code component ablations only. These results do not reproduce or replace historical paper-reference labels unless a separate equivalence audit establishes matching semantics.",
+  "benchmarks": [
+    "delayed_recall"
+  ],
+  "seeds": [
+    11
+  ],
+  "variants": [
+    "full"
+  ],
+  "protocol": {
+    "epochs": 1,
+    "batch_size": 8,
+    "dataset_size": 32,
+    "train_rollout_steps": 2,
+    "eval_rollout_steps": 3
+  },
+  "runs": [
+    {
+      "benchmark": "delayed_recall",
+      "seed": 11,
+      "variant": "full",
+      "memory_enabled": true,
+      "retrieval_enabled": true,
+      "salience_gating_enabled": true,
+      "started_utc": "2026-09-02T14:15:30.971290+00:00",
+      "ended_utc": "2026-09-02T14:17:51.956007+00:00",
+      "git_commit": "UNKNOWN",
+      "source_identity": "8d3bdfd227c5003d92551aa7dcc0e06fa5a7f6b8b2cc1e93e14fe83fb573e725",
+      "identity_kind": "sha256_source_tree",
+      "experiment_name": "current_ablation_delayed_recall_full_s11",
+      "results_root": "/Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/runner_smoke",
+      "epochs": 1,
+      "batch_size": 8,
+      "dataset_size": 32,
+      "train_rollout_steps": 2,
+      "eval_rollout_steps": 3,
+      "summary_file": "results/runner_smoke/current_ablation_delayed_recall_full_s11/delayed_recall_fim_plus/metrics/summary.json",
+      "run_results_file": "results/runner_smoke/current_ablation_delayed_recall_full_s11/delayed_recall_fim_plus/metrics/run_results.json",
+      "resolved_config_file": "results/runner_smoke/current_ablation_delayed_recall_full_s11/delayed_recall_fim_plus/configs/resolved_config.yaml",
+      "checkpoint_file": "results/runner_smoke/current_ablation_delayed_recall_full_s11/delayed_recall_fim_plus/checkpoints/final_state.pt",
+      "log_file": "results/runner_smoke/current_ablation_delayed_recall_full_s11/delayed_recall_fim_plus/logs/run.log",
+      "rollout_mse": 0.17451435327529907,
+      "rollout_mae": 0.33334675431251526
+    }
+  ]
+}

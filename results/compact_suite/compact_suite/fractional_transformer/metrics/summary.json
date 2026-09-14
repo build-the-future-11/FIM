@@ -1,0 +1,83 @@
+{
+  "experiment": {
+    "name": "compact_suite"
+  },
+  "runtime": {
+    "seed": 42,
+    "data_seed": null,
+    "model_seed": null,
+    "train_seed": null,
+    "eval_seed": null,
+    "device": "cpu",
+    "deterministic": true,
+    "results_root": "results/compact_suite"
+  },
+  "benchmark": {
+    "name": "FractionalDiffusionBenchmark",
+    "state_shape": [
+      1,
+      32,
+      32
+    ],
+    "horizon": 100,
+    "is_non_markovian": true,
+    "stochastic": false,
+    "dt": 0.01,
+    "dimension": 1024,
+    "alpha": 0.8,
+    "diffusivity": 0.05,
+    "history": 64,
+    "spectral": true
+  },
+  "model": "TransformerFieldSystem",
+  "train_history": {
+    "train_loss": [
+      1.0374934673309326
+    ],
+    "train_rollout_loss": [
+      1.0374934673309326
+    ],
+    "val_loss": [
+      0.9428434371948242
+    ],
+    "val_rollout_loss": [
+      0.9428434371948242
+    ],
+    "lr": [
+      0.0003
+    ],
+    "grad_norm": [
+      0.9999999374920128
+    ]
+  },
+  "parameters": 169537,
+  "seed_streams": {
+    "base": 42,
+    "data": 10042,
+    "model": 20042,
+    "train": 30042,
+    "evaluation": 40042
+  },
+  "generated_dataset_sha256": "3df8f32390ff4214bc3b6742a777d90dbccad5919dba5a88e2d36917dc5cf896",
+  "split_indices_sha256": "7e62d5a021dbb968c17247d3bd25dd8556e571c6117c245aba391e8455dbc7b9",
+  "metrics": {
+    "model_name": "TransformerFieldSystem",
+    "rollout_steps": 8,
+    "params": 169537,
+    "mse": 0.9061490297317505,
+    "mae": 0.946137011051178,
+    "final_step_mse": 0.864592432975769,
+    "final_step_mae": 0.9286620616912842,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.5246335338146171,
+    "latent_norm_drift": 40.421173095703125,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 28.23318493253311,
+    "trajectory_fidelity": -0.12997770309448242,
+    "rollout_score": 0.5246179519031251
+  },
+  "evaluation": {
+    "mse_mean": 0.8688468933105469,
+    "mse_final": 0.865662157535553
+  }
+}

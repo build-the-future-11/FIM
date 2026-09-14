@@ -1,0 +1,12 @@
+2026-05-12 13:27:28,454 | INFO | Device: cpu
+2026-05-12 13:27:28,454 | INFO | Benchmark: delayed_recall
+2026-05-12 13:27:28,454 | INFO | Model: mlp
+2026-05-12 13:27:28,454 | INFO | Seed: 42
+2026-05-12 13:27:28,455 | INFO | Parameters: 2,177
+2026-05-12 13:27:28,456 | INFO | Training start
+2026-05-12 13:27:28,468 | INFO | Training complete
+2026-05-12 13:27:28,468 | INFO | Evaluation start
+2026-05-12 13:27:29,095 | INFO | Evaluation complete
+2026-05-12 13:27:29,098 | INFO | Saved checkpoint: results/mini_suite/mini_suite/delayed_recall_mlp/checkpoints/final_state.pt
+2026-05-12 13:27:29,098 | INFO | Saved summary: results/mini_suite/mini_suite/delayed_recall_mlp/metrics/summary.json
+2026-05-12 13:27:29,098 | INFO | Saved config: results/mini_suite/mini_suite/delayed_recall_mlp/configs/resolved_config.yaml

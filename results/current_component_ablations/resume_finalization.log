@@ -1,0 +1,145 @@
+Wed Sep  2 22:08:51 IST 2026
+[1/6] implementation and scientific-integrity tests
+sssss.sss....................................                            [100%]
+37 passed, 8 skipped in 13.40s
+[2/6] frozen 24-cell current-component matrix
+CACHE benchmark=lorenz96 seed=11 variant=full
+CACHE benchmark=lorenz96 seed=11 variant=no_memory
+CACHE benchmark=lorenz96 seed=11 variant=no_retrieval
+CACHE benchmark=lorenz96 seed=11 variant=no_salience_gating
+CACHE benchmark=lorenz96 seed=23 variant=full
+CACHE benchmark=lorenz96 seed=23 variant=no_memory
+CACHE benchmark=lorenz96 seed=23 variant=no_retrieval
+CACHE benchmark=lorenz96 seed=23 variant=no_salience_gating
+CACHE benchmark=lorenz96 seed=37 variant=full
+CACHE benchmark=lorenz96 seed=37 variant=no_memory
+CACHE benchmark=lorenz96 seed=37 variant=no_retrieval
+CACHE benchmark=lorenz96 seed=37 variant=no_salience_gating
+CACHE benchmark=delayed_recall seed=11 variant=full
+CACHE benchmark=delayed_recall seed=11 variant=no_memory
+CACHE benchmark=delayed_recall seed=11 variant=no_retrieval
+CACHE benchmark=delayed_recall seed=11 variant=no_salience_gating
+CACHE benchmark=delayed_recall seed=23 variant=full
+CACHE benchmark=delayed_recall seed=23 variant=no_memory
+CACHE benchmark=delayed_recall seed=23 variant=no_retrieval
+CACHE benchmark=delayed_recall seed=23 variant=no_salience_gating
+RUN benchmark=delayed_recall seed=37 variant=full
+2026-09-02 22:09:15,521 | INFO | Device: mps
+2026-09-02 22:09:15,522 | INFO | Benchmark: delayed_recall
+2026-09-02 22:09:15,522 | INFO | Model: fim_plus
+2026-09-02 22:09:15,522 | INFO | Seed: 37
+2026-09-02 22:09:15,645 | INFO | Parameters: 405,836
+2026-09-02 22:09:15,665 | INFO | Training start
+Epoch 0: train=0.1197, train_rollout=0.1197, val=0.1926, val_rollout=0.1926
+Epoch 1: train=0.0890, train_rollout=0.0890, val=0.1800, val_rollout=0.1800
+Epoch 2: train=0.0882, train_rollout=0.0882, val=0.1680, val_rollout=0.1680
+Epoch 3: train=0.0879, train_rollout=0.0879, val=0.1571, val_rollout=0.1571
+Epoch 4: train=0.0878, train_rollout=0.0878, val=0.1476, val_rollout=0.1476
+Epoch 5: train=0.0880, train_rollout=0.0880, val=0.1392, val_rollout=0.1392
+Epoch 6: train=0.0875, train_rollout=0.0875, val=0.1321, val_rollout=0.1321
+Epoch 7: train=0.0876, train_rollout=0.0876, val=0.1260, val_rollout=0.1260
+Epoch 8: train=0.0874, train_rollout=0.0874, val=0.1211, val_rollout=0.1211
+Epoch 9: train=0.0875, train_rollout=0.0875, val=0.1171, val_rollout=0.1171
+Epoch 10: train=0.0873, train_rollout=0.0873, val=0.1138, val_rollout=0.1138
+Epoch 11: train=0.0873, train_rollout=0.0873, val=0.1111, val_rollout=0.1111
+2026-09-02 22:10:53,234 | INFO | Training complete
+2026-09-02 22:10:53,287 | INFO | Evaluation start
+2026-09-02 22:10:55,976 | INFO | Evaluation complete
+2026-09-02 22:10:56,049 | INFO | Saved checkpoint: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_full_s37/delayed_recall_fim_plus/checkpoints/final_state.pt
+2026-09-02 22:10:56,049 | INFO | Saved summary: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_full_s37/delayed_recall_fim_plus/metrics/summary.json
+2026-09-02 22:10:56,049 | INFO | Saved config: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_full_s37/delayed_recall_fim_plus/configs/resolved_config.yaml
+RUN benchmark=delayed_recall seed=37 variant=no_memory
+2026-09-02 22:10:56,239 | INFO | Device: mps
+2026-09-02 22:10:56,239 | INFO | Benchmark: delayed_recall
+2026-09-02 22:10:56,239 | INFO | Model: fim_plus
+2026-09-02 22:10:56,239 | INFO | Seed: 37
+2026-09-02 22:10:56,304 | INFO | Parameters: 405,836
+2026-09-02 22:10:56,314 | INFO | Training start
+Epoch 0: train=0.1209, train_rollout=0.1209, val=0.1925, val_rollout=0.1925
+Epoch 1: train=0.0888, train_rollout=0.0888, val=0.1798, val_rollout=0.1798
+Epoch 2: train=0.0879, train_rollout=0.0879, val=0.1677, val_rollout=0.1677
+Epoch 3: train=0.0885, train_rollout=0.0885, val=0.1567, val_rollout=0.1567
+Epoch 4: train=0.0877, train_rollout=0.0877, val=0.1471, val_rollout=0.1471
+Epoch 5: train=0.0879, train_rollout=0.0879, val=0.1386, val_rollout=0.1386
+Epoch 6: train=0.0875, train_rollout=0.0875, val=0.1314, val_rollout=0.1314
+Epoch 7: train=0.0876, train_rollout=0.0876, val=0.1253, val_rollout=0.1253
+Epoch 8: train=0.0874, train_rollout=0.0874, val=0.1203, val_rollout=0.1203
+Epoch 9: train=0.0874, train_rollout=0.0874, val=0.1162, val_rollout=0.1162
+Epoch 10: train=0.0873, train_rollout=0.0873, val=0.1128, val_rollout=0.1128
+Epoch 11: train=0.0873, train_rollout=0.0873, val=0.1100, val_rollout=0.1100
+2026-09-02 22:12:03,146 | INFO | Training complete
+2026-09-02 22:12:03,200 | INFO | Evaluation start
+2026-09-02 22:12:03,596 | INFO | Evaluation complete
+2026-09-02 22:12:03,679 | INFO | Saved checkpoint: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_no_memory_s37/delayed_recall_fim_plus/checkpoints/final_state.pt
+2026-09-02 22:12:03,679 | INFO | Saved summary: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_no_memory_s37/delayed_recall_fim_plus/metrics/summary.json
+2026-09-02 22:12:03,679 | INFO | Saved config: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_no_memory_s37/delayed_recall_fim_plus/configs/resolved_config.yaml
+RUN benchmark=delayed_recall seed=37 variant=no_retrieval
+2026-09-02 22:12:03,802 | INFO | Device: mps
+2026-09-02 22:12:03,803 | INFO | Benchmark: delayed_recall
+2026-09-02 22:12:03,803 | INFO | Model: fim_plus
+2026-09-02 22:12:03,803 | INFO | Seed: 37
+2026-09-02 22:12:03,854 | INFO | Parameters: 405,836
+2026-09-02 22:12:03,868 | INFO | Training start
+Epoch 0: train=0.1209, train_rollout=0.1209, val=0.1925, val_rollout=0.1925
+Epoch 1: train=0.0888, train_rollout=0.0888, val=0.1798, val_rollout=0.1798
+Epoch 2: train=0.0879, train_rollout=0.0879, val=0.1677, val_rollout=0.1677
+Epoch 3: train=0.0885, train_rollout=0.0885, val=0.1567, val_rollout=0.1567
+Epoch 4: train=0.0877, train_rollout=0.0877, val=0.1471, val_rollout=0.1471
+Epoch 5: train=0.0879, train_rollout=0.0879, val=0.1386, val_rollout=0.1386
+Epoch 6: train=0.0875, train_rollout=0.0875, val=0.1314, val_rollout=0.1314
+Epoch 7: train=0.0876, train_rollout=0.0876, val=0.1253, val_rollout=0.1253
+Epoch 8: train=0.0874, train_rollout=0.0874, val=0.1203, val_rollout=0.1203
+Epoch 9: train=0.0874, train_rollout=0.0874, val=0.1162, val_rollout=0.1162
+Epoch 10: train=0.0873, train_rollout=0.0873, val=0.1128, val_rollout=0.1128
+Epoch 11: train=0.0873, train_rollout=0.0873, val=0.1100, val_rollout=0.1100
+2026-09-02 22:13:23,057 | INFO | Training complete
+2026-09-02 22:13:23,110 | INFO | Evaluation start
+2026-09-02 22:13:23,805 | INFO | Evaluation complete
+2026-09-02 22:13:23,891 | INFO | Saved checkpoint: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_no_retrieval_s37/delayed_recall_fim_plus/checkpoints/final_state.pt
+2026-09-02 22:13:23,892 | INFO | Saved summary: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_no_retrieval_s37/delayed_recall_fim_plus/metrics/summary.json
+2026-09-02 22:13:23,892 | INFO | Saved config: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_no_retrieval_s37/delayed_recall_fim_plus/configs/resolved_config.yaml
+RUN benchmark=delayed_recall seed=37 variant=no_salience_gating
+2026-09-02 22:13:24,016 | INFO | Device: mps
+2026-09-02 22:13:24,016 | INFO | Benchmark: delayed_recall
+2026-09-02 22:13:24,016 | INFO | Model: fim_plus
+2026-09-02 22:13:24,016 | INFO | Seed: 37
+2026-09-02 22:13:24,089 | INFO | Parameters: 405,836
+2026-09-02 22:13:24,099 | INFO | Training start
+Epoch 0: train=0.1200, train_rollout=0.1200, val=0.1926, val_rollout=0.1926
+Epoch 1: train=0.0899, train_rollout=0.0899, val=0.1802, val_rollout=0.1802
+Epoch 2: train=0.0879, train_rollout=0.0879, val=0.1683, val_rollout=0.1683
+Epoch 3: train=0.0884, train_rollout=0.0884, val=0.1575, val_rollout=0.1575
+Epoch 4: train=0.0878, train_rollout=0.0878, val=0.1480, val_rollout=0.1480
+Epoch 5: train=0.0877, train_rollout=0.0877, val=0.1397, val_rollout=0.1397
+Epoch 6: train=0.0876, train_rollout=0.0876, val=0.1326, val_rollout=0.1326
+Epoch 7: train=0.0875, train_rollout=0.0875, val=0.1264, val_rollout=0.1264
+Epoch 8: train=0.0874, train_rollout=0.0874, val=0.1214, val_rollout=0.1214
+Epoch 9: train=0.0875, train_rollout=0.0875, val=0.1174, val_rollout=0.1174
+Epoch 10: train=0.0873, train_rollout=0.0873, val=0.1140, val_rollout=0.1140
+Epoch 11: train=0.0873, train_rollout=0.0873, val=0.1112, val_rollout=0.1112
+2026-09-02 22:14:57,588 | INFO | Training complete
+2026-09-02 22:14:57,641 | INFO | Evaluation start
+2026-09-02 22:14:58,354 | INFO | Evaluation complete
+2026-09-02 22:14:58,440 | INFO | Saved checkpoint: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_no_salience_gating_s37/delayed_recall_fim_plus/checkpoints/final_state.pt
+2026-09-02 22:14:58,440 | INFO | Saved summary: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_no_salience_gating_s37/delayed_recall_fim_plus/metrics/summary.json
+2026-09-02 22:14:58,440 | INFO | Saved config: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_no_salience_gating_s37/delayed_recall_fim_plus/configs/resolved_config.yaml
+WROTE /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/manifest.json runs=24
+VALID current-component ablation evidence: 24 unique cells, one commit, one frozen protocol
+Fresh current-code FIM ablation matrix completed and validated.
+Manifest: results/current_component_ablations/manifest.json
+[3/6] paired analysis
+WROTE /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/analysis.json comparisons=6
+[4/6] evidence-derived manuscript
+WROTE /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/paper/fim-current-evidence.md words=2761 sha256=96679ea860971e7388e4409b58058c0a545a16befca829759958dadb9bc6247b
+[5/6] compiled publication artifact
+{
+  "pdf": "/Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/output/pdf/fim-current-evidence.pdf",
+  "bytes": 54212,
+  "sha256": "c3acdcb4c4d237877e63d9f219e5af6510b8e002d07194ecbc704274c196e51b",
+  "source_sha256": "96679ea860971e7388e4409b58058c0a545a16befca829759958dadb9bc6247b"
+}
+[6/6] final manifest revalidation
+VALID current-component ablation evidence: 24 unique cells, one commit, one frozen protocol
+FIM CURRENT-EVIDENCE FINALIZATION COMPLETE
+Wed Sep  2 22:15:09 IST 2026
+EXIT_STATUS=0

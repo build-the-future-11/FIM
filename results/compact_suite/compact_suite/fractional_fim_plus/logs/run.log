@@ -1,0 +1,13 @@
+2026-09-13 21:54:36,496 | INFO | Device: cpu
+2026-09-13 21:54:36,496 | INFO | Benchmark: fractional
+2026-09-13 21:54:36,496 | INFO | Model: fim_plus
+2026-09-13 21:54:36,496 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:54:36,503 | INFO | Parameters: 104,620
+2026-09-13 21:54:36,503 | INFO | Training start
+2026-09-13 21:54:36,901 | INFO | Training complete
+2026-09-13 21:54:36,902 | INFO | Evaluation start
+2026-09-13 21:54:50,230 | INFO | Evaluation complete
+2026-09-13 21:54:50,299 | INFO | Saved checkpoint: results/compact_suite/compact_suite/fractional_fim_plus/checkpoints/final_state.pt
+2026-09-13 21:54:50,299 | INFO | Saved summary: results/compact_suite/compact_suite/fractional_fim_plus/metrics/summary.json
+2026-09-13 21:54:50,299 | INFO | Saved config: results/compact_suite/compact_suite/fractional_fim_plus/configs/resolved_config.yaml
+2026-09-13 21:54:50,299 | INFO | Saved provenance: results/compact_suite/compact_suite/fractional_fim_plus/metadata.json

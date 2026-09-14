@@ -1,0 +1,13 @@
+2026-09-13 21:55:57,124 | INFO | Device: cpu
+2026-09-13 21:55:57,124 | INFO | Benchmark: fractional
+2026-09-13 21:55:57,124 | INFO | Model: mlp
+2026-09-13 21:55:57,124 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:55:57,127 | INFO | Parameters: 66,592
+2026-09-13 21:55:57,128 | INFO | Training start
+2026-09-13 21:55:57,136 | INFO | Training complete
+2026-09-13 21:55:57,137 | INFO | Evaluation start
+2026-09-13 21:56:07,162 | INFO | Evaluation complete
+2026-09-13 21:56:07,219 | INFO | Saved checkpoint: results/compact_suite/compact_suite/fractional_mlp/checkpoints/final_state.pt
+2026-09-13 21:56:07,219 | INFO | Saved summary: results/compact_suite/compact_suite/fractional_mlp/metrics/summary.json
+2026-09-13 21:56:07,219 | INFO | Saved config: results/compact_suite/compact_suite/fractional_mlp/configs/resolved_config.yaml
+2026-09-13 21:56:07,219 | INFO | Saved provenance: results/compact_suite/compact_suite/fractional_mlp/metadata.json

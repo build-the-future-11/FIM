@@ -1,0 +1,23 @@
+[project]
+name = "fim"
+version = "0.1.0"
+description = "Fabric Induced Memory"
+requires-python = ">=3.10"
+
+dependencies = [
+    "torch",
+    "numpy",
+    "matplotlib",
+    "pyyaml",
+    "weasyprint>=69,<70",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]

@@ -1,0 +1,6 @@
+2026-05-12 11:31:00,248 | INFO | Device: cpu
+2026-05-12 11:31:00,250 | INFO | Benchmark: lorenz
+2026-05-12 11:31:00,251 | INFO | Model: fim
+2026-05-12 11:31:00,252 | INFO | Seed: 42
+2026-05-12 11:31:00,273 | INFO | Parameters: 2,334
+2026-05-12 11:31:00,412 | INFO | Training start

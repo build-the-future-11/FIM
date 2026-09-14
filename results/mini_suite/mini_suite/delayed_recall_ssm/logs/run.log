@@ -1,0 +1,12 @@
+2026-05-12 13:27:26,775 | INFO | Device: cpu
+2026-05-12 13:27:26,775 | INFO | Benchmark: delayed_recall
+2026-05-12 13:27:26,775 | INFO | Model: ssm
+2026-05-12 13:27:26,775 | INFO | Seed: 42
+2026-05-12 13:27:26,777 | INFO | Parameters: 8,164
+2026-05-12 13:27:26,777 | INFO | Training start
+2026-05-12 13:27:26,855 | INFO | Training complete
+2026-05-12 13:27:26,855 | INFO | Evaluation start
+2026-05-12 13:27:27,605 | INFO | Evaluation complete
+2026-05-12 13:27:27,608 | INFO | Saved checkpoint: results/mini_suite/mini_suite/delayed_recall_ssm/checkpoints/final_state.pt
+2026-05-12 13:27:27,609 | INFO | Saved summary: results/mini_suite/mini_suite/delayed_recall_ssm/metrics/summary.json
+2026-05-12 13:27:27,609 | INFO | Saved config: results/mini_suite/mini_suite/delayed_recall_ssm/configs/resolved_config.yaml

@@ -1,0 +1,13 @@
+2026-09-13 21:54:33,593 | INFO | Device: cpu
+2026-09-13 21:54:33,593 | INFO | Benchmark: burgers
+2026-09-13 21:54:33,593 | INFO | Model: ssm
+2026-09-13 21:54:33,593 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:54:33,597 | INFO | Parameters: 8,164
+2026-09-13 21:54:33,597 | INFO | Training start
+2026-09-13 21:54:33,633 | INFO | Training complete
+2026-09-13 21:54:33,633 | INFO | Evaluation start
+2026-09-13 21:54:34,601 | INFO | Evaluation complete
+2026-09-13 21:54:34,657 | INFO | Saved checkpoint: results/compact_suite/compact_suite/burgers_ssm/checkpoints/final_state.pt
+2026-09-13 21:54:34,657 | INFO | Saved summary: results/compact_suite/compact_suite/burgers_ssm/metrics/summary.json
+2026-09-13 21:54:34,657 | INFO | Saved config: results/compact_suite/compact_suite/burgers_ssm/configs/resolved_config.yaml
+2026-09-13 21:54:34,657 | INFO | Saved provenance: results/compact_suite/compact_suite/burgers_ssm/metadata.json

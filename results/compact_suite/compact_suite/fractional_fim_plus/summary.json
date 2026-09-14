@@ -1,0 +1,83 @@
+{
+  "experiment": {
+    "name": "compact_suite"
+  },
+  "runtime": {
+    "seed": 42,
+    "data_seed": null,
+    "model_seed": null,
+    "train_seed": null,
+    "eval_seed": null,
+    "device": "cpu",
+    "deterministic": true,
+    "results_root": "results/compact_suite"
+  },
+  "benchmark": {
+    "name": "FractionalDiffusionBenchmark",
+    "state_shape": [
+      1,
+      32,
+      32
+    ],
+    "horizon": 100,
+    "is_non_markovian": true,
+    "stochastic": false,
+    "dt": 0.01,
+    "dimension": 1024,
+    "alpha": 0.8,
+    "diffusivity": 0.05,
+    "history": 64,
+    "spectral": true
+  },
+  "model": "FIMSystem",
+  "train_history": {
+    "train_loss": [
+      0.7817871570587158
+    ],
+    "train_rollout_loss": [
+      0.7817871570587158
+    ],
+    "val_loss": [
+      1.3568929433822632
+    ],
+    "val_rollout_loss": [
+      1.3568929433822632
+    ],
+    "lr": [
+      0.0003
+    ],
+    "grad_norm": [
+      0.9999998826017439
+    ]
+  },
+  "parameters": 104620,
+  "seed_streams": {
+    "base": 42,
+    "data": 10042,
+    "model": 20042,
+    "train": 30042,
+    "evaluation": 40042
+  },
+  "generated_dataset_sha256": "3df8f32390ff4214bc3b6742a777d90dbccad5919dba5a88e2d36917dc5cf896",
+  "split_indices_sha256": "7e62d5a021dbb968c17247d3bd25dd8556e571c6117c245aba391e8455dbc7b9",
+  "metrics": {
+    "model_name": "FIMSystem",
+    "rollout_steps": 8,
+    "params": 104620,
+    "mse": 5.928668975830078,
+    "mae": 1.5630035400390625,
+    "final_step_mse": 15.604904174804688,
+    "final_step_mae": 2.8181910514831543,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.14416950716123692,
+    "latent_norm_drift": 185.6998291015625,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 310.7640912074774,
+    "trajectory_fidelity": -0.007489463314414024,
+    "rollout_score": 0.14432786491725802
+  },
+  "evaluation": {
+    "mse_mean": 38.63954544067383,
+    "mse_final": 27.45267677307129
+  }
+}

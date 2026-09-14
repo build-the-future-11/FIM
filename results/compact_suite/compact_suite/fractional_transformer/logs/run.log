@@ -1,0 +1,13 @@
+2026-09-13 21:54:50,302 | INFO | Device: cpu
+2026-09-13 21:54:50,302 | INFO | Benchmark: fractional
+2026-09-13 21:54:50,302 | INFO | Model: transformer
+2026-09-13 21:54:50,302 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:54:50,310 | INFO | Parameters: 169,537
+2026-09-13 21:54:50,311 | INFO | Training start
+2026-09-13 21:54:56,851 | INFO | Training complete
+2026-09-13 21:54:56,852 | INFO | Evaluation start
+2026-09-13 21:55:35,973 | INFO | Evaluation complete
+2026-09-13 21:55:36,037 | INFO | Saved checkpoint: results/compact_suite/compact_suite/fractional_transformer/checkpoints/final_state.pt
+2026-09-13 21:55:36,037 | INFO | Saved summary: results/compact_suite/compact_suite/fractional_transformer/metrics/summary.json
+2026-09-13 21:55:36,037 | INFO | Saved config: results/compact_suite/compact_suite/fractional_transformer/configs/resolved_config.yaml
+2026-09-13 21:55:36,037 | INFO | Saved provenance: results/compact_suite/compact_suite/fractional_transformer/metadata.json

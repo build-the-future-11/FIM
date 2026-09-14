@@ -1,0 +1,12 @@
+[
+  {
+    "model": "DeepONetFieldSystem",
+    "benchmark": "DelayedRecallBenchmark",
+    "params": 6753,
+    "train_last": 0.11665278673171997,
+    "val_last": 0.1237463653087616,
+    "rollout_mse": 0.15794573724269867,
+    "final_step_mse": 0.13740822672843933,
+    "rollout_score": 0.8635983257567844
+  }
+]

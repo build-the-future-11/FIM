@@ -1,0 +1,14 @@
+training:
+  batch_size: 8
+  lr: 1e-4
+  weight_decay: 1e-5
+  epochs: 100
+
+  rollout_steps: 20
+
+  loss_weights:
+    pred: 1.0
+    sparse: 1e-3
+    retrieval: 0.1
+    consistency: 0.1
+    stability: 0.01

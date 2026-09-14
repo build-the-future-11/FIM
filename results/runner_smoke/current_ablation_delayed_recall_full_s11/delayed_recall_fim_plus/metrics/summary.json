@@ -1,0 +1,67 @@
+{
+  "experiment": {
+    "name": "current_ablation_delayed_recall_full_s11"
+  },
+  "runtime": {
+    "seed": 11,
+    "device": "cpu",
+    "deterministic": true,
+    "results_root": "/Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/runner_smoke"
+  },
+  "benchmark": {
+    "name": "DelayedRecallBenchmark",
+    "state_shape": [
+      33
+    ],
+    "horizon": 16,
+    "is_non_markovian": true,
+    "stochastic": false,
+    "dt": 1.0,
+    "dimension": 33,
+    "memory_dim": 32,
+    "delay": 8
+  },
+  "model": {
+    "name": "fim_plus",
+    "hidden": 64,
+    "trace_dim": 32,
+    "compile": false,
+    "memory_capacity": 2048,
+    "retrieval_topk": 32,
+    "memory_decay": 0.02,
+    "salience_threshold": 0.45,
+    "layers": 3,
+    "heads": 4,
+    "ff_mult": 4,
+    "modes": 8,
+    "basis_dim": 64
+  },
+  "train_history": {
+    "train_loss": [
+      0.3302185535430908
+    ],
+    "train_rollout_loss": [
+      0.3302185535430908
+    ],
+    "val_loss": [
+      0.41985535621643066
+    ],
+    "val_rollout_loss": [
+      0.41985535621643066
+    ],
+    "lr": [
+      2.9999999999999997e-05
+    ],
+    "grad_norm": [
+      0.9999998231080259
+    ]
+  },
+  "parameters": 405836,
+  "rollout_mse": 0.17451435327529907,
+  "final_step_mse": 0.1780216097831726,
+  "rollout_mae": 0.33334675431251526,
+  "final_step_mae": 0.3377193212509155,
+  "rollout_steps": 3,
+  "evaluation_batch_size": 32,
+  "salience_available": true
+}

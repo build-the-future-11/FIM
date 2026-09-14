@@ -1,0 +1,16 @@
+project:
+  name: fim
+  seed: 42
+  device: cuda
+  dtype: float32
+
+paths:
+  data: ./data
+  logs: ./logs
+  checkpoints: ./checkpoints
+  outputs: ./outputs
+
+logging:
+  log_interval: 10
+  save_interval: 1000
+  eval_interval: 500

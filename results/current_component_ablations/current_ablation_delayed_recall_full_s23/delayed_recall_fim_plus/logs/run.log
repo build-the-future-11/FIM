@@ -1,0 +1,12 @@
+2026-09-02 21:53:35,946 | INFO | Device: mps
+2026-09-02 21:53:35,946 | INFO | Benchmark: delayed_recall
+2026-09-02 21:53:35,946 | INFO | Model: fim_plus
+2026-09-02 21:53:35,946 | INFO | Seed: 23
+2026-09-02 21:53:36,007 | INFO | Parameters: 405,836
+2026-09-02 21:53:36,018 | INFO | Training start
+2026-09-02 21:55:56,151 | INFO | Training complete
+2026-09-02 21:55:56,203 | INFO | Evaluation start
+2026-09-02 21:55:57,279 | INFO | Evaluation complete
+2026-09-02 21:55:57,388 | INFO | Saved checkpoint: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_full_s23/delayed_recall_fim_plus/checkpoints/final_state.pt
+2026-09-02 21:55:57,388 | INFO | Saved summary: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_full_s23/delayed_recall_fim_plus/metrics/summary.json
+2026-09-02 21:55:57,388 | INFO | Saved config: /Volumes/PRO-BLADE/GitHub-Every-Repo/FIM/results/current_component_ablations/current_ablation_delayed_recall_full_s23/delayed_recall_fim_plus/configs/resolved_config.yaml

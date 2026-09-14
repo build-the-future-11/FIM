@@ -1,0 +1,23 @@
+{
+  "model": "ShapeAwareMLP",
+  "metrics": {
+    "model_name": "ShapeAwareMLP",
+    "rollout_steps": 8,
+    "params": 2177,
+    "mse": 0.19657471776008606,
+    "mae": 0.3141838312149048,
+    "final_step_mse": 0.10878681391477585,
+    "final_step_mae": 0.2692653238773346,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.8357221478252423,
+    "latent_norm_drift": 0.0,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 28867.735288016727,
+    "trajectory_fidelity": -0.025999465957283974,
+    "rollout_score": 0.8357188106664482
+  },
+  "evaluation": {
+    "mse_mean": 1.3382021188735962,
+    "mse_final": 1.3379870653152466
+  }
+}

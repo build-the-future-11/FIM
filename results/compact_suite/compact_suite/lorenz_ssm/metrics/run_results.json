@@ -1,0 +1,23 @@
+{
+  "model": "SelectiveSSMSystem",
+  "metrics": {
+    "model_name": "SelectiveSSMSystem",
+    "rollout_steps": 8,
+    "params": 8164,
+    "mse": 23.21494483947754,
+    "mae": 3.9131858348846436,
+    "final_step_mse": 23.46645736694336,
+    "final_step_mae": 3.9466257095336914,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.04129679992387118,
+    "latent_norm_drift": 0.0055446624755859375,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 3940.886700187649,
+    "trajectory_fidelity": -0.019746266305446625,
+    "rollout_score": 0.04129681098301341
+  },
+  "evaluation": {
+    "mse_mean": 19.550846099853516,
+    "mse_final": 19.57657241821289
+  }
+}

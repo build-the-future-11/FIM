@@ -1,0 +1,13 @@
+2026-09-13 21:55:46,950 | INFO | Device: cpu
+2026-09-13 21:55:46,950 | INFO | Benchmark: fractional
+2026-09-13 21:55:46,950 | INFO | Model: deeponet
+2026-09-13 21:55:46,950 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:55:46,953 | INFO | Parameters: 6,753
+2026-09-13 21:55:46,953 | INFO | Training start
+2026-09-13 21:55:46,981 | INFO | Training complete
+2026-09-13 21:55:46,981 | INFO | Evaluation start
+2026-09-13 21:55:57,063 | INFO | Evaluation complete
+2026-09-13 21:55:57,122 | INFO | Saved checkpoint: results/compact_suite/compact_suite/fractional_deeponet/checkpoints/final_state.pt
+2026-09-13 21:55:57,122 | INFO | Saved summary: results/compact_suite/compact_suite/fractional_deeponet/metrics/summary.json
+2026-09-13 21:55:57,122 | INFO | Saved config: results/compact_suite/compact_suite/fractional_deeponet/configs/resolved_config.yaml
+2026-09-13 21:55:57,122 | INFO | Saved provenance: results/compact_suite/compact_suite/fractional_deeponet/metadata.json

@@ -1,0 +1,13 @@
+2026-09-13 21:54:28,176 | INFO | Device: cpu
+2026-09-13 21:54:28,176 | INFO | Benchmark: lorenz
+2026-09-13 21:54:28,176 | INFO | Model: transformer
+2026-09-13 21:54:28,176 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:54:28,199 | INFO | Parameters: 169,537
+2026-09-13 21:54:28,200 | INFO | Training start
+2026-09-13 21:54:28,258 | INFO | Training complete
+2026-09-13 21:54:28,258 | INFO | Evaluation start
+2026-09-13 21:54:28,906 | INFO | Evaluation complete
+2026-09-13 21:54:28,962 | INFO | Saved checkpoint: results/compact_suite/compact_suite/lorenz_transformer/checkpoints/final_state.pt
+2026-09-13 21:54:28,962 | INFO | Saved summary: results/compact_suite/compact_suite/lorenz_transformer/metrics/summary.json
+2026-09-13 21:54:28,962 | INFO | Saved config: results/compact_suite/compact_suite/lorenz_transformer/configs/resolved_config.yaml
+2026-09-13 21:54:28,962 | INFO | Saved provenance: results/compact_suite/compact_suite/lorenz_transformer/metadata.json

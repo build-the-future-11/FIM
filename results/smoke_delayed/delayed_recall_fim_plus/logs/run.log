@@ -1,0 +1,12 @@
+2026-05-12 13:26:34,021 | INFO | Device: cpu
+2026-05-12 13:26:34,022 | INFO | Benchmark: delayed_recall
+2026-05-12 13:26:34,022 | INFO | Model: fim_plus
+2026-05-12 13:26:34,022 | INFO | Seed: 42
+2026-05-12 13:26:34,027 | INFO | Parameters: 104,620
+2026-05-12 13:26:34,029 | INFO | Training start
+2026-05-12 13:26:34,231 | INFO | Training complete
+2026-05-12 13:26:34,231 | INFO | Evaluation start
+2026-05-12 13:26:39,709 | INFO | Evaluation complete
+2026-05-12 13:26:39,721 | INFO | Saved checkpoint: results/smoke_delayed/delayed_recall_fim_plus/checkpoints/final_state.pt
+2026-05-12 13:26:39,721 | INFO | Saved summary: results/smoke_delayed/delayed_recall_fim_plus/metrics/summary.json
+2026-05-12 13:26:39,722 | INFO | Saved config: results/smoke_delayed/delayed_recall_fim_plus/configs/resolved_config.yaml

@@ -1,0 +1,23 @@
+{
+  "model": "TransformerFieldSystem",
+  "metrics": {
+    "model_name": "TransformerFieldSystem",
+    "rollout_steps": 8,
+    "params": 169537,
+    "mse": 0.2490188628435135,
+    "mae": 0.3682868182659149,
+    "final_step_mse": 0.16121236979961395,
+    "final_step_mae": 0.313854843378067,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.8006523918894972,
+    "latent_norm_drift": 3.423513412475586,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 1327.00682833327,
+    "trajectory_fidelity": -0.03276324272155762,
+    "rollout_score": 0.8006284210339324
+  },
+  "evaluation": {
+    "mse_mean": 1.5250592231750488,
+    "mse_final": 1.5229986906051636
+  }
+}

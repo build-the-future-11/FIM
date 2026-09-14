@@ -1,0 +1,13 @@
+2026-09-13 21:56:07,221 | INFO | Device: cpu
+2026-09-13 21:56:07,221 | INFO | Benchmark: reaction_diffusion
+2026-09-13 21:56:07,221 | INFO | Model: fim_plus
+2026-09-13 21:56:07,221 | INFO | Seed streams: base=42 data=10042 model=20042 train=30042 eval=40042
+2026-09-13 21:56:07,239 | INFO | Parameters: 105,197
+2026-09-13 21:56:07,239 | INFO | Training start
+2026-09-13 21:56:08,701 | INFO | Training complete
+2026-09-13 21:56:08,704 | INFO | Evaluation start
+2026-09-13 21:57:37,430 | INFO | Evaluation complete
+2026-09-13 21:57:37,504 | INFO | Saved checkpoint: results/compact_suite/compact_suite/reaction_diffusion_fim_plus/checkpoints/final_state.pt
+2026-09-13 21:57:37,505 | INFO | Saved summary: results/compact_suite/compact_suite/reaction_diffusion_fim_plus/metrics/summary.json
+2026-09-13 21:57:37,505 | INFO | Saved config: results/compact_suite/compact_suite/reaction_diffusion_fim_plus/configs/resolved_config.yaml
+2026-09-13 21:57:37,505 | INFO | Saved provenance: results/compact_suite/compact_suite/reaction_diffusion_fim_plus/metadata.json

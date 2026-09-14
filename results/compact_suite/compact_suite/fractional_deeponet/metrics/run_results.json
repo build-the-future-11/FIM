@@ -1,0 +1,23 @@
+{
+  "model": "DeepONetFieldSystem",
+  "metrics": {
+    "model_name": "DeepONetFieldSystem",
+    "rollout_steps": 8,
+    "params": 6753,
+    "mse": 0.003824237734079361,
+    "mae": 0.04568912833929062,
+    "final_step_mse": 0.0010677562095224857,
+    "final_step_mae": 0.030435660853981972,
+    "divergence_time": 8.0,
+    "stability_under_perturbation": 0.9961903038021986,
+    "latent_norm_drift": 0.003948211669921875,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 2360.955926957898,
+    "trajectory_fidelity": 0.010554604232311249,
+    "rollout_score": 0.9961903313445472
+  },
+  "evaluation": {
+    "mse_mean": 0.001138505176641047,
+    "mse_final": 0.0010111358715221286
+  }
+}

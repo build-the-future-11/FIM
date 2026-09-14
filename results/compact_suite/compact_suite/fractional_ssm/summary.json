@@ -1,0 +1,83 @@
+{
+  "experiment": {
+    "name": "compact_suite"
+  },
+  "runtime": {
+    "seed": 42,
+    "data_seed": null,
+    "model_seed": null,
+    "train_seed": null,
+    "eval_seed": null,
+    "device": "cpu",
+    "deterministic": true,
+    "results_root": "results/compact_suite"
+  },
+  "benchmark": {
+    "name": "FractionalDiffusionBenchmark",
+    "state_shape": [
+      1,
+      32,
+      32
+    ],
+    "horizon": 100,
+    "is_non_markovian": true,
+    "stochastic": false,
+    "dt": 0.01,
+    "dimension": 1024,
+    "alpha": 0.8,
+    "diffusivity": 0.05,
+    "history": 64,
+    "spectral": true
+  },
+  "model": "SelectiveSSMSystem",
+  "train_history": {
+    "train_loss": [
+      0.2948340177536011
+    ],
+    "train_rollout_loss": [
+      0.2948340177536011
+    ],
+    "val_loss": [
+      0.491865336894989
+    ],
+    "val_rollout_loss": [
+      0.491865336894989
+    ],
+    "lr": [
+      0.0003
+    ],
+    "grad_norm": [
+      0.9999997931257907
+    ]
+  },
+  "parameters": 8164,
+  "seed_streams": {
+    "base": 42,
+    "data": 10042,
+    "model": 20042,
+    "train": 30042,
+    "evaluation": 40042
+  },
+  "generated_dataset_sha256": "3df8f32390ff4214bc3b6742a777d90dbccad5919dba5a88e2d36917dc5cf896",
+  "split_indices_sha256": "7e62d5a021dbb968c17247d3bd25dd8556e571c6117c245aba391e8455dbc7b9",
+  "metrics": {
+    "model_name": "SelectiveSSMSystem",
+    "rollout_steps": 8,
+    "params": 8164,
+    "mse": 0.7866461873054504,
+    "mae": 0.6577699780464172,
+    "final_step_mse": 1.1175460815429688,
+    "final_step_mae": 0.8041484355926514,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.5600891297926707,
+    "latent_norm_drift": 0.0227203369140625,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 894.9964440982956,
+    "trajectory_fidelity": -0.08707632124423981,
+    "rollout_score": 0.5597079080935217
+  },
+  "evaluation": {
+    "mse_mean": 1.1992288827896118,
+    "mse_final": 1.2278249263763428
+  }
+}

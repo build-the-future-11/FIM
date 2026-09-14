@@ -1,0 +1,53 @@
+experiment:
+  name: smoke_delayed
+runtime:
+  seed: 42
+  device: cpu
+  deterministic: true
+  results_root: results
+benchmark:
+  name: delayed_recall
+  config: {}
+model:
+  name: fim_plus
+  hidden: 32
+  trace_dim: 16
+  compile: false
+  memory_capacity: 2048
+  retrieval_topk: 32
+  memory_decay: 0.02
+  salience_threshold: 0.45
+  layers: 3
+  heads: 4
+  ff_mult: 4
+  modes: 8
+  basis_dim: 64
+train:
+  epochs: 1
+  batch_size: 4
+  dataset_size: 16
+  workers: 2
+  dynamic_data: false
+  lr: 0.0003
+  weight_decay: 0.01
+  grad_clip: 1.0
+  amp: false
+  rollout_steps: 4
+  teacher_forcing_ratio: 0.5
+  horizon_decay: 1.0
+  ema_decay: 0.999
+  use_ema: true
+  evaluate_ema: true
+  scheduler_per_batch: true
+  steps_per_epoch: 100
+  val_batches: 20
+  resume_from: null
+  save_best: true
+  save_last: true
+  checkpoint_name: fim_checkpoint.pt
+eval:
+  enabled: true
+  rollout_steps: 50
+  perturbation_scale: 0.01
+  perturbation_trials: 5
+  divergence_threshold: 0.15

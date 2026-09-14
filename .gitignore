@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+env/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Local secrets/config
+.env
+.env.*
+!.env.example
+
+# Build/package
+build/
+dist/
+*.egg-info/
+
+# Large/local run scratch that should not become accidental evidence
+runs_local/
+results_local/
+tmp/

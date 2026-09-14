@@ -1,0 +1,23 @@
+{
+  "model": "FIMSystem",
+  "metrics": {
+    "model_name": "FIMSystem",
+    "rollout_steps": 8,
+    "params": 104620,
+    "mse": 0.19758178293704987,
+    "mae": 0.3117504417896271,
+    "final_step_mse": 0.12373862415552139,
+    "final_step_mae": 0.2654559314250946,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.8352258660837869,
+    "latent_norm_drift": 3.780841827392578,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 662.451542712257,
+    "trajectory_fidelity": -0.08202516287565231,
+    "rollout_score": 0.8350160416998965
+  },
+  "evaluation": {
+    "mse_mean": 1.1799522638320923,
+    "mse_final": 1.1707711219787598
+  }
+}

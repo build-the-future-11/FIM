@@ -1,0 +1,66 @@
+{
+  "experiment": {
+    "name": "mini_suite"
+  },
+  "runtime": {
+    "seed": 42,
+    "device": "cpu",
+    "deterministic": true,
+    "results_root": "results/mini_suite"
+  },
+  "benchmark": {
+    "name": "DelayedRecallBenchmark",
+    "state_shape": [
+      33
+    ],
+    "horizon": 16,
+    "is_non_markovian": true,
+    "stochastic": false,
+    "dt": 1.0,
+    "dimension": 33,
+    "memory_dim": 32,
+    "delay": 8
+  },
+  "model": "ShapeAwareMLP",
+  "train_history": {
+    "train_loss": [
+      0.14861012498537698
+    ],
+    "train_rollout_loss": [
+      0.14861012498537698
+    ],
+    "val_loss": [
+      0.13792243599891663
+    ],
+    "val_rollout_loss": [
+      0.13792243599891663
+    ],
+    "lr": [
+      2.9999999999999997e-05
+    ],
+    "grad_norm": [
+      0.08756111728022782
+    ]
+  },
+  "parameters": 2177,
+  "metrics": {
+    "model_name": "ShapeAwareMLP",
+    "rollout_steps": 8,
+    "params": 2177,
+    "mse": 0.19657471776008606,
+    "mae": 0.3141838312149048,
+    "final_step_mse": 0.10878681391477585,
+    "final_step_mae": 0.2692653238773346,
+    "divergence_time": 0.0,
+    "stability_under_perturbation": 0.8357221478252423,
+    "latent_norm_drift": 0.0,
+    "retrieval_utilization": 0.0,
+    "throughput_items_per_sec": 28867.735288016727,
+    "trajectory_fidelity": -0.025999465957283974,
+    "rollout_score": 0.8357188106664482
+  },
+  "evaluation": {
+    "mse_mean": 1.3382021188735962,
+    "mse_final": 1.3379870653152466
+  }
+}
