@@ -101,3 +101,4 @@ For new paper evidence, preserve the Git commit, dirty-tree state, resolved conf
 ## Current status
 
 **IMPLEMENTED / EVIDENCE_PARTIAL.** The repository is a substantive research implementation with stored experimental artifacts, but a fresh frozen multi-seed benchmark-and-ablation reproduction is still required before stronger submission claims are justified.
+# FIM
