@@ -122,13 +122,24 @@ class Trainer:
         if self.ema is not None:
             self.ema.update(self.model)
 
+        packed = torch.stack(
+            [
+                loss_out.total.detach(),
+                loss_out.prediction.detach(),
+                loss_out.memory.detach(),
+                loss_out.stability.detach(),
+                loss_out.retrieval.detach(),
+                loss_out.consistency.detach(),
+            ]
+        )
+        total_v, pred_v, mem_v, stab_v, retr_v, cons_v = packed.tolist()
         return TrainStats(
-            loss=float(loss_out.total.item()),
-            pred_loss=float(loss_out.prediction.item()),
-            mem_loss=float(loss_out.memory.item()),
-            stab_loss=float(loss_out.stability.item()),
-            retr_loss=float(loss_out.retrieval.item()),
-            cons_loss=float(loss_out.consistency.item()),
+            loss=float(total_v),
+            pred_loss=float(pred_v),
+            mem_loss=float(mem_v),
+            stab_loss=float(stab_v),
+            retr_loss=float(retr_v),
+            cons_loss=float(cons_v),
         )
 
     @torch.no_grad()
@@ -163,11 +174,22 @@ class Trainer:
             w_cons=0.05,
         )
 
+        packed = torch.stack(
+            [
+                loss_out.total.detach(),
+                loss_out.prediction.detach(),
+                loss_out.memory.detach(),
+                loss_out.stability.detach(),
+                loss_out.retrieval.detach(),
+                loss_out.consistency.detach(),
+            ]
+        )
+        total_v, pred_v, mem_v, stab_v, retr_v, cons_v = packed.tolist()
         return TrainStats(
-            loss=float(loss_out.total.item()),
-            pred_loss=float(loss_out.prediction.item()),
-            mem_loss=float(loss_out.memory.item()),
-            stab_loss=float(loss_out.stability.item()),
-            retr_loss=float(loss_out.retrieval.item()),
-            cons_loss=float(loss_out.consistency.item()),
+            loss=float(total_v),
+            pred_loss=float(pred_v),
+            mem_loss=float(mem_v),
+            stab_loss=float(stab_v),
+            retr_loss=float(retr_v),
+            cons_loss=float(cons_v),
         )

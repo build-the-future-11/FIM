@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import math
 from typing import Optional
 
 import torch
@@ -36,7 +37,5 @@ def estimate_growth_rate(
     if len(sequence) < 2:
         return 0.0
     norms = [torch.linalg.norm(x).item() for x in sequence]
-    ratios = []
-    for a, b in zip(norms[:-1], norms[1:]):
-        ratios.append(torch.log(torch.tensor((b + eps) / (a + eps))).item())
+    ratios = [math.log((b + eps) / (a + eps)) for a, b in zip(norms[:-1], norms[1:])]
     return float(sum(ratios) / len(ratios))

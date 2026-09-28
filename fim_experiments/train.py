@@ -237,7 +237,12 @@ def _rollout_loss(
                 current = pred
             else:
                 use_teacher = torch.rand((), device=pred.device) < teacher_forcing_ratio
-                current = _prepare_single_input(targets[:, t]) if bool(use_teacher.item()) else pred
+                teacher = _prepare_single_input(targets[:, t])
+                # Avoid host sync on the Bernoulli draw; blend on-device.
+                if teacher.shape == pred.shape:
+                    current = torch.where(use_teacher, teacher, pred)
+                else:
+                    current = teacher if bool(use_teacher.item()) else pred
 
     total = torch.stack(losses).sum()
     stats = {
@@ -561,6 +566,7 @@ def train(
     save_best: bool = True,
     save_last: bool = True,
     checkpoint_name: str = "fim_checkpoint.pt",
+    log_every: int = 10,
 ) -> Dict[str, List[float]]:
     device = torch.device(device)
     model = model.to(device)
@@ -689,11 +695,12 @@ def train(
             history["val_loss"].append(val_stats["loss"])
             history["val_rollout_loss"].append(val_stats["rollout_loss"])
             best_val_loss = min(best_val_loss, val_stats["loss"])
-            print(
-                f"Epoch {epoch}: train={train_stats['loss']:.4f}, "
-                f"train_rollout={train_stats['rollout_loss']:.4f}, "
-                f"val={val_stats['loss']:.4f}, val_rollout={val_stats['rollout_loss']:.4f}"
-            )
+            if epoch % max(1, log_every) == 0 or epoch == epochs - 1:
+                print(
+                    f"Epoch {epoch}: train={train_stats['loss']:.4f}, "
+                    f"train_rollout={train_stats['rollout_loss']:.4f}, "
+                    f"val={val_stats['loss']:.4f}, val_rollout={val_stats['rollout_loss']:.4f}"
+                )
         elif benchmark is not None:
             if evaluate_ema and ema is not None:
                 ema.apply(model)
@@ -723,16 +730,18 @@ def train(
             history["val_loss"].append(val_stats["loss"])
             history["val_rollout_loss"].append(val_stats["rollout_loss"])
             best_val_loss = min(best_val_loss, val_stats["loss"])
-            print(
-                f"Epoch {epoch}: train={train_stats['loss']:.4f}, "
-                f"train_rollout={train_stats['rollout_loss']:.4f}, "
-                f"val={val_stats['loss']:.4f}, val_rollout={val_stats['rollout_loss']:.4f}"
-            )
+            if epoch % max(1, log_every) == 0 or epoch == epochs - 1:
+                print(
+                    f"Epoch {epoch}: train={train_stats['loss']:.4f}, "
+                    f"train_rollout={train_stats['rollout_loss']:.4f}, "
+                    f"val={val_stats['loss']:.4f}, val_rollout={val_stats['rollout_loss']:.4f}"
+                )
         else:
-            print(
-                f"Epoch {epoch}: train={train_stats['loss']:.4f}, "
-                f"train_rollout={train_stats['rollout_loss']:.4f}"
-            )
+            if epoch % max(1, log_every) == 0 or epoch == epochs - 1:
+                print(
+                    f"Epoch {epoch}: train={train_stats['loss']:.4f}, "
+                    f"train_rollout={train_stats['rollout_loss']:.4f}"
+                )
 
         lr_value = optimizer.param_groups[0]["lr"]
         history["lr"].append(float(lr_value))

@@ -23,8 +23,8 @@ HIDDEN_DIM = 128
 ROLLOUT_STEPS = 50
 EVAL_BATCH_SIZE = 32
 
-# Logging
-LOG_INTERVAL = 1
+# Logging — avoid full rollout eval every epoch on the hot path.
+LOG_INTERVAL = 10
 
 # Reproducibility
 SEED = 42

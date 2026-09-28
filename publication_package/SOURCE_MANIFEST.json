@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-09-26T03:28:47.774681+00:00",
+  "project": "FIM",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "76640b71d04de588e5fb32c3da8193880c1e1da6c0dd80ff0c67a853dcf89416",
+      "bytes": 66
+    },
+    {
+      "path": "paper/COMPONENT_ABLATION_NOTE.md",
+      "sha256": "afd077546d82336b26e92cbb90adad5ec32d34e392f3ecbf53185fc82e7503ee",
+      "bytes": 4135
+    },
+    {
+      "path": "paper/Final FIM.pdf",
+      "sha256": "965bc14c4015e4d7a0ca6941351a0d00febd06d6f0ddb50d173182bd90186298",
+      "bytes": 513171
+    },
+    {
+      "path": "paper/PROJECT_STATUS.md",
+      "sha256": "55a46893d15ea725128c2c50b90084e05f01e0b0f2a6061616759f4e29361669",
+      "bytes": 2546
+    },
+    {
+      "path": "paper/RESEARCH_TRUTH.md",
+      "sha256": "ba425dcfb62c7f1d0244bb45792843e8499d089f484774a3a478f25eb1075e44",
+      "bytes": 6202
+    },
+    {
+      "path": "paper/fim-current-evidence.md",
+      "sha256": "42e3f464623505b76ce37a6284a12ed0a106a3b5f17e8375e023dcb2b5532ef8",
+      "bytes": 22530
+    }
+  ],
+  "external_submit_authorized": false
+}

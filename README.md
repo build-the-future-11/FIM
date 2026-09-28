@@ -1,5 +1,8 @@
 # Fabric-Induced Memory (FIM)
 
+**Publication:** Internal archival package only. External venue submit not authorized.
+
+
 FIM is a research framework for neural sequence models with a structured latent memory fabric rather than only a larger context window or a single compressed hidden state.
 
 The implementation explores local information propagation, persistent traces, decay, salience, retrieval, latent geometry, stochastic dynamics, and long-horizon forecasting.

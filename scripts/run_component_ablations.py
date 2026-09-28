@@ -228,17 +228,22 @@ def main() -> None:
     args.results_root.mkdir(parents=True, exist_ok=True)
     rows = _load_reusable_rows(args)
     completed = {(row['benchmark'], int(row['seed']), row['variant']) for row in rows}
+    progress_every = max(1, int(os.environ.get('RESEARCH_PROGRESS_EVERY', '10')))
+    cell = 0
     for benchmark in args.benchmarks:
         for seed in args.seeds:
             for variant in args.variants:
+                cell += 1
                 if (benchmark, seed, variant) in completed:
-                    print(f'CACHE benchmark={benchmark} seed={seed} variant={variant}', flush=True)
+                    if cell % progress_every == 0:
+                        print(f'CACHE benchmark={benchmark} seed={seed} variant={variant}')
                     continue
-                print(f'RUN benchmark={benchmark} seed={seed} variant={variant}', flush=True)
+                if cell % progress_every == 0:
+                    print(f'RUN benchmark={benchmark} seed={seed} variant={variant}')
                 rows.append(run_one(args, benchmark, seed, variant))
                 _write_manifest(args, rows)
     _write_manifest(args, rows)
-    print(f'WROTE {args.manifest} runs={len(rows)}', flush=True)
+    print(f'WROTE {args.manifest} runs={len(rows)}')
 
 
 if __name__ == '__main__':
