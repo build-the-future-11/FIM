@@ -54,6 +54,46 @@ def test_no_retrieval_stores_but_never_reads():
     assert second.retrieved is None
 
 
+def test_no_memory_and_no_retrieval_are_prediction_gradient_equivalent():
+    # These two current-code ablations differ only in whether unused memory
+    # buffers are written. With retrieval disabled in both variants, bank
+    # contents cannot enter prediction or gradient computation.
+    torch.manual_seed(20260929)
+    no_memory = _model(**variant_switches('no_memory'))
+    torch.manual_seed(20260929)
+    no_retrieval = _model(**variant_switches('no_retrieval'))
+
+    for (name_a, param_a), (name_b, param_b) in zip(
+        no_memory.named_parameters(), no_retrieval.named_parameters()
+    ):
+        assert name_a == name_b
+        assert torch.equal(param_a, param_b)
+
+    x = torch.linspace(-1.0, 1.0, steps=16).reshape(2, 1, 1, 8)
+    target = 0.7 * x + 0.1 * torch.roll(x, shifts=1, dims=-1)
+
+    out_a = no_memory(x)
+    out_b = no_retrieval(x)
+    assert torch.equal(out_a.prediction, out_b.prediction)
+    assert len(no_memory.bank) == 0
+    assert len(no_retrieval.bank) > 0
+
+    loss_a = torch.nn.functional.mse_loss(out_a.prediction, target)
+    loss_b = torch.nn.functional.mse_loss(out_b.prediction, target)
+    assert torch.equal(loss_a, loss_b)
+
+    loss_a.backward()
+    loss_b.backward()
+    for (name_a, param_a), (name_b, param_b) in zip(
+        no_memory.named_parameters(), no_retrieval.named_parameters()
+    ):
+        assert name_a == name_b
+        if param_a.grad is None or param_b.grad is None:
+            assert param_a.grad is None and param_b.grad is None
+        else:
+            assert torch.equal(param_a.grad, param_b.grad)
+
+
 def test_full_stores_then_retrieves():
     model = _model(**variant_switches('full'))
     x = torch.randn(2, 1, 1, 8)
