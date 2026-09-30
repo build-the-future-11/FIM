@@ -11,6 +11,8 @@ The implementation explores local information propagation, persistent traces, de
 
 Read [`RESEARCH_TRUTH.md`](RESEARCH_TRUTH.md) before quoting results.
 
+The retained 24-cell matrix is historical shared-minibatch evidence. Its byte-hash validation does not establish trajectory isolation or training through the delayed-recall event. Read the [historical evidence boundary](research/HISTORICAL_EVIDENCE_BOUNDARY_20260930.md) before making mechanism claims.
+
 The public repository contains real source code, tests, experiment runners, stored checkpoints/logs/configs, a delayed-recall mini-suite, historical paper-reference values, and an existing PDF manuscript. These artifacts are not all equivalent forms of evidence.
 
 In particular:
