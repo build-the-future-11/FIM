@@ -1,0 +1,7 @@
+benchmark,variant,n_pairs,mean_delta_rollout_mse,std_delta_rollout_mse,seeds_variant_better,seeds_full_better,exact_sign_pvalue,interpretation
+delayed_recall,no_memory,3,-8.779764175415039e-05,0.00014269659440194264,2,1,1.0,negative favors the reduced variant; positive favors full
+delayed_recall,no_retrieval,3,-8.779764175415039e-05,0.00014269659440194264,2,1,1.0,negative favors the reduced variant; positive favors full
+delayed_recall,no_salience_gating,3,-0.0001060167948404948,0.0001526490817706884,2,0,0.5,negative favors the reduced variant; positive favors full
+lorenz96,no_memory,3,7.979075113932292e-05,0.03022837758783624,1,2,1.0,negative favors the reduced variant; positive favors full
+lorenz96,no_retrieval,3,7.979075113932292e-05,0.03022837758783624,1,2,1.0,negative favors the reduced variant; positive favors full
+lorenz96,no_salience_gating,3,0.04092961549758911,0.1001777974058947,2,1,1.0,negative favors the reduced variant; positive favors full

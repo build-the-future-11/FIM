@@ -1,0 +1,23 @@
+{
+  "baseline_commit": "142739465f0c3aa8efc674f64c793b818c9e48e5",
+  "checkpoints_read": 0,
+  "generated_sha256": {
+    "SOURCE_ARTIFACTS.json": "140accc9baf064f9b021c852bfa5af777b6b9fa0a091c1055989d318285de602",
+    "abstract.txt": "e7368517e2d7769a6109e5a3718e4181de2c79878c595a9883cc86dce7def125",
+    "abstract_metadata.json": "213c131dd3baa1e4b6ac17339fef07d23186bcb774fc2eb9fa73e43fb39daf5a",
+    "abstract_title.txt": "cf9a3e3ccd87a34049687cdf86e2ef53e2079e749d499fbc1e7cf7ed413d863f",
+    "analysis.json": "09d582995d15b16e815089393ae422b9719d8d5ca2f819fa4e6016e7b2ca1fc8",
+    "cells.csv": "d5be8f065c00f3b6a1a3987fd58ffcc9fe011d70d15dd9fe1430238911f5bb3f",
+    "historical_paired_comparisons.pdf": "8b176178746870e12098863a5893577eac28ccacbafe4c03520a2360f523c8d1",
+    "historical_paired_comparisons.png": "970ad3a000455bbd03620d97850332d2a46262b2c2b7c1a4d129783116948e49",
+    "historical_paired_comparisons.svg": "f33be1d1a47022ff183155b862b7f20e154a2e5e9cba68afbdd440f32add953b",
+    "paired_comparisons.csv": "fc050ba7c8a8c16a40faedd994bd5d179c0eb3ac5875edab90c1f9440bc1b33c"
+  },
+  "manifest_sha256": "6350bd2252e75a4d1886f9f6f6f817ea1ff3256f30549a81b27396e37c555e9a",
+  "schema": "fim-historical-presentation-v1",
+  "scripts_sha256": {
+    "scripts/analyze_component_ablations.py": "b9990d821caa56e482a972f3326b347e41c1eac9244f2f926bb01037d5961d0f",
+    "scripts/build_historical_ds27_presentation.py": "afbae7645eb1f8712d09f19955ba5a33df59a4a03da45883130428eece6170a7"
+  },
+  "text_artifacts_verified": 96
+}

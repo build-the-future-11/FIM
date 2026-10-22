@@ -1,0 +1,64 @@
+{
+  "filename": "FIM_Historical_Study_Poster.pdf",
+  "kicker": "FIM · Historical Lorenz96 and delayed-recall study",
+  "title": "Retained component ablations in a historical three-seed FIM evaluation",
+  "finding": "Mean directions split 3–3 across six comparisons. The smallest exact sign-test p-value is 0.5.",
+  "main_figure": "historical_paired_comparisons.png",
+  "main_caption": "All paired removal-minus-full rollout-MSE differences are shown. Positive favors the full model; negative favors removal. The two benchmark panels have independent vertical scales.",
+  "source_url": "https://github.com/build-the-future-11/FIM/tree/fa3ad83a7f9c59e000764b91c61b9ab8e5842b20/publication/historical_ds27_candidate",
+  "columns": [
+    [
+      {
+        "kind": "heading",
+        "text": "Retained design and audit"
+      },
+      {
+        "kind": "text",
+        "text": "Two benchmarks × three seeds × four configurations give 24 retained cells. Configurations are full, no memory, no retrieval and no salience gating. The shared-minibatch protocol used 12 epochs, batch size 64 and four-step training versus 30-step evaluation rollouts."
+      },
+      {
+        "kind": "text",
+        "text": "All 96 text-artifact hashes were checked: a summary, run-results report, configuration and log for each cell. MSE and MAE agree across the retained reports and manifest. No checkpoint was read or replayed."
+      },
+      {
+        "kind": "heading",
+        "text": "Seed-level interpretation"
+      },
+      {
+        "kind": "text",
+        "text": "The largest mean full-model advantage, Lorenz96 salience gating, is driven by seed 23; the other two seeds favor removal. No-memory and no-retrieval error sequences coincide in both benchmarks."
+      }
+    ],
+    [
+      {
+        "kind": "heading",
+        "text": "The result remains negative"
+      },
+      {
+        "kind": "text",
+        "text": "The retained comparisons do not establish component necessity or a recovered memory mechanism. Matching error sequences do not prove prediction or implementation identity. Three seeds do not supply independent-domain replication."
+      },
+      {
+        "kind": "heading",
+        "text": "Statistical and source limits"
+      },
+      {
+        "kind": "text",
+        "text": "With three nonzero pairs, the smallest possible two-sided exact sign-test p-value is 0.25; the observed minimum is 0.5. Nonsignificance does not establish equivalence. The executed Git revision is recorded as UNKNOWN, so full source reconstruction is not claimed."
+      },
+      {
+        "kind": "heading",
+        "text": "A distinct historical lineage"
+      },
+      {
+        "kind": "text",
+        "text": "This presentation covers the closed historical shared-minibatch study. Burgers V2, delayed-recall V2 and the held trajectory-isolated successor are separate projects. Their sources and outcomes are not substituted by this package."
+      }
+    ]
+  ],
+  "input_sha256": {
+    "analysis.json": "09d582995d15b16e815089393ae422b9719d8d5ca2f819fa4e6016e7b2ca1fc8",
+    "poster_text.md": "7973a68d278a7e59d8520e96998f943b9b2e214cfb3a51990f7ec9620cf6f35d",
+    "historical_paired_comparisons.png": "970ad3a000455bbd03620d97850332d2a46262b2c2b7c1a4d129783116948e49"
+  }
+}
