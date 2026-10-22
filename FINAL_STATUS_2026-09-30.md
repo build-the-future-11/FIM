@@ -5,6 +5,10 @@
 
 The maintained study has a complete 24/24 frozen component matrix, paired descriptive analysis, exact sign tests, a seven-page evidence-derived preprint, checksum sidecar, and a passing repository test state recorded in `PROJECT_STATUS.md`.
 
+## Interpretation qualification
+
+The 24-cell package remains an archived mixed/negative result. It used a shared minibatch bank and a four-step training rollout before the default delayed-recall event at step eight. Artifact completeness is not experimental-validity certification. See [historical evidence boundary](research/HISTORICAL_EVIDENCE_BOUNDARY_20260930.md); do not characterize this archive as a trajectory-isolated test or count prediction-equivalent controls as independent evidence.
+
 ## Supported conclusion
 The retained evidence does **not** establish that the tested memory, retrieval, or salience-gating components are generally necessary. Across the six paired reduced-minus-full comparisons, the full model has the favorable mean direction in 3/6 and the removal has the favorable mean direction in 3/6; the smallest exact sign-test p-value is 0.5.
 
