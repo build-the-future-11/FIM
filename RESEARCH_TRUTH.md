@@ -2,7 +2,19 @@
 
 This document records what the current public repository artifacts support and what they do not yet support.
 
-## Evidence currently present
+## Current evidence qualification — 19 November 2026
+
+The 24-cell record below is **retired shared-minibatch evidence**, not a current
+trajectory-isolated mechanism study. Its mixed/adverse outcomes and artifact
+hashes are preserved. The shared memory bank and four-step training horizon
+prevent those cells from resolving the intended isolated-memory question.
+The separately frozen canonical 40-cell protocol has no completed execution
+verified in the main source/Actions records checked for this correction.
+Read the [source-bound reconciliation](research/CURRENT_EVIDENCE_RECONCILIATION_20261119.md)
+and the [historical evidence boundary](research/HISTORICAL_EVIDENCE_BOUNDARY_20260930.md)
+before using any result or completion label below. No experiment was rerun.
+
+## Retained implementation and artifacts
 
 - A delayed-recall mini-suite comparing FIM with DeepONet, a selective SSM, a shape-aware MLP, and a Transformer.
 - Persisted checkpoints, resolved configs, run logs, metrics, and generated figures for the stored mini-suite runs.
@@ -23,9 +35,9 @@ For the persisted delayed-recall mini-suite, the stored rollout MSE values are:
 
 On this artifact, FIM is competitive but is not the best model by rollout MSE. DeepONet is best among the stored runs, and the shape-aware MLP is marginally lower than FIM.
 
-## Current execution-integrity status
+## Historical execution-integrity record
 
-The maintained repository execution paths have been repaired and verified. The canonical training path now routes through the maintained experiment implementation, checkpoint evaluation supports the current structured model outputs, and regression tests cover the repaired evaluator behavior. The current local suite passes **37 tests with 8 explicit skips and 0 failures**.
+The earlier execution record reports repaired training/evaluation paths and a local suite of **37 tests with 8 explicit skips and 0 failures**. Those counts are retained historical receipts; they do not qualify the current checkout and were not rerun for this documentation correction. The recorded repairs route the training path through the maintained experiment implementation and support structured model outputs during checkpoint evaluation.
 
 The legacy component-ablation wrapper that depended on unsupported flags was not treated as evidence. It has been replaced by a current-code ablation stack whose switches correspond to mechanisms that actually exist in `FIMSystem`:
 
@@ -36,19 +48,19 @@ The legacy component-ablation wrapper that depended on unsupported flags was not
 
 The historical `no_spectral_mixing` label is intentionally unsupported in the current stack and must not be silently mapped to an unrelated mechanism.
 
-A frozen 24-cell execution matrix was completed on 2026-09-02 as **2 benchmarks × 3 seeds × 4 current-code variants**. The runner atomically checkpointed each cell and bound it to source identity `e8071b2243247361e3ea0da1eaa412e69f204593f80102fe5f837dead5300f46`, switch state, configuration, metrics, raw rollout result, checkpoint, and log hashes. After an MPS allocation deadlock occurred before seed-37 produced any artifact, the process was terminated and resumed from the 20-cell atomic manifest; all four remaining cells then completed on MPS under the unchanged source identity and protocol. The final manifest contains 24 unique cells and passes byte-hash validation.
+The historical shared-minibatch 24-cell execution matrix was completed on 2026-09-02 as **2 benchmarks × 3 seeds × 4 current-code variants**. The runner atomically checkpointed each cell and bound it to source identity `e8071b2243247361e3ea0da1eaa412e69f204593f80102fe5f837dead5300f46`, switch state, configuration, metrics, raw rollout result, checkpoint, and log hashes. After an MPS allocation deadlock occurred before seed-37 produced any artifact, the process was terminated and resumed from the 20-cell atomic manifest; all four remaining cells then completed on MPS under the unchanged source identity and protocol. The final manifest contains 24 unique cells; its historical validation receipt authenticates the retained artifacts, not the corrected mechanism claim.
 
-## Fresh current-component result
+## Historical component outcomes (descriptive)
 
-The fresh evidence does **not** support a general benefit from the implemented memory fabric:
+Under the retained historical implementation and budget, the observed comparisons did **not** establish a consistent memory benefit. Their design limitations prevent a trajectory-isolated mechanism conclusion:
 
 - delayed recall: removing memory changes mean rollout MSE by -0.000088 (reduced minus full), removing retrieval by -0.000088, and removing salience gating by -0.000106; all mean directions favor removal and none is confirmatory;
 - Lorenz-96: removing memory or retrieval changes mean rollout MSE by only +0.000080 with seed ranges spanning both signs; removing salience gating changes the mean by +0.040930, but two of three individual seeds favor removal and one adverse seed drives the mean;
-- `no_memory` and `no_retrieval` are numerically identical for every seed in both benchmarks, consistent with stored traces being behaviorally inert when retrieval is disabled;
+- `no_memory` and `no_retrieval` have identical stored error statistics for every seed in both benchmarks; this does not by itself prove bitwise prediction identity, and the duplicate contrasts are not independent predictive evidence;
 - across six benchmark-by-removal comparisons, mean direction favors the full model in three and removal in three; every exact sign-test p-value is at least 0.5;
 - the retained mini-suite still places DeepONet first (rollout MSE 0.157946) and FIM third (0.197582).
 
-The defensible contribution is therefore a fail-closed component study and a negative/mechanism-boundary result. It is not evidence of state-of-the-art forecasting or universal memory value.
+The retained contribution is an archival record of the implementation, descriptive mixed/adverse outcomes and their identified limitations. A valid artifact manifest does not repair shared-trajectory retrieval or inadequate training horizon. This record establishes neither trajectory-isolated memory efficacy nor its absence, and it does not support state-of-the-art forecasting.
 
 ## Historical paper-reference boundary
 
@@ -74,6 +86,6 @@ Those values do not support a blanket claim that the full model consistently out
 
 ## Next evidence gate
 
-Before any stronger architecture claim, run a new preregistered study with oracle and random retrieval, retrieval-precision labels, parameter-matched controls, crossed delay/capacity/query-noise/distractor settings, and public natural sequence or operator-learning datasets. Strong baselines must be retrained on identical trajectories, seeds, budgets, and selection rules. The current negative result must remain immutable rather than being tuned away.
+The maintained source already has a separately frozen [40-cell trajectory-isolated protocol](https://github.com/THE-BU1LD/Fabric-Induced-Memory/blob/e1ec0de48b915002418fde7625bdf96659023815/research/protocols/FIM_TRAJECTORY_ISOLATED_CONFIRMATORY_V1.md). Its exact source, execution decision, retained hold, environment and durable output location must be resolved there before a scientific dispatch. This archive does not host that corrected runner. Preserve the closed historical mixed/adverse record and do not rerun its 24 cells for a favorable outcome. Broader architecture or natural-domain claims require separately justified data, strong matched baselines and discriminating retrieval controls after the corrected study; they cannot be borrowed from this archive.
 
 Negative, mixed, baseline-winning, and mechanism-falsifying outcomes are all valid scientific endpoints. Missing execution is not a null result, and historical paper-reference values are not fresh reproduction evidence.

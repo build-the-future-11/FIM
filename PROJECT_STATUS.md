@@ -1,10 +1,24 @@
 # Project Status
 
-## Current objective
+## Current interpretation — 19 November 2026
+
+The recorded 24-cell artifact package remains preserved, but its shared-minibatch
+design and training horizon do not establish a trajectory-isolated memory-effect
+result. Historical test counts, PDF inspection and checksum verification below
+are dated receipts, not fresh verification or experimental-validity certification.
+The canonical corrected 40-cell protocol is a separate evidence lane whose
+completed execution was not verified in the checked main source/Actions records.
+The current archive is not a refreshed scientific or conference-ready release.
+
+See the [source-bound reconciliation](research/CURRENT_EVIDENCE_RECONCILIATION_20261119.md).
+
+## Historical status text (superseded interpretation)
+
+### Current objective
 
 Publish an evidence-bounded component study of the maintained FIM implementation without reviving unsupported historical mechanism labels.
 
-## Working
+### Working
 
 - maintained train/evaluation paths;
 - semantic intervention tests;
@@ -13,7 +27,7 @@ Publish an evidence-bounded component study of the maintained FIM implementation
 - paired descriptive analysis;
 - evidence-derived seven-page preprint and checksum sidecar.
 
-## Implemented this run
+### Implemented this run
 
 - completed all 24 benchmark × seed × variant cells;
 - recovered one pre-artifact MPS allocator deadlock from the verified 20-cell manifest;
@@ -21,29 +35,29 @@ Publish an evidence-bounded component study of the maintained FIM implementation
 - deepened related work and clarified the stable-direction failure;
 - compiled and visually inspected the final seven-page PDF.
 
-## Tested
+### Tested
 
 - 42 passed, 7 explicit hardware/optional-path skips, 0 failures on 2026-09-14;
 - manifest validator: 24 unique cells, one frozen source identity/protocol;
 - five-entry SHA-256 sidecar: all checks pass;
 - PDF: 7 Letter pages, no observed clipping or overlap.
 
-## Evidence boundary
+### Evidence boundary
 
 - the current paper is a rigorous bounded negative result, not a natural-domain or state-of-the-art study;
 - the historical mini-suite is contextual evidence and was not pooled with the fresh matrix.
 
-## Negative findings
+### Negative findings
 
 - no retained experiment demonstrates general necessity of memory, retrieval, or salience gating;
 - the historical `no_spectral_mixing` label has no valid current-code mapping and is permanently
   excluded from current-code interpretation; maintained runners reject it before training.
 
-## Conditions for a separate successor study
+### Conditions for a separate successor study
 
 - stronger claims require new public-domain tasks, stronger matched baselines, and a preregistered mechanism-recovery design.
 
-## Metrics / experimental evidence
+### Metrics / experimental evidence
 
 - 24/24 frozen cells;
 - full model mean-direction wins: 3/6 comparisons;
@@ -51,13 +65,13 @@ Publish an evidence-bounded component study of the maintained FIM implementation
 - smallest exact sign p-value: 0.5;
 - DeepONet mini-suite rollout MSE 0.157946 vs FIM 0.197582.
 
-## Highest-value next actions
+### Highest-value next actions
 
 1. Freeze an oracle/random-retrieval factorial protocol.
 2. Add independent public datasets and dataset-clustered inference.
 3. Retrain DeepONet, MLP, SSM, and Transformer controls under identical budgets.
 
-## Reproduction commands
+### Reproduction commands
 
 ```bash
 MPLBACKEND=Agg .venv/bin/python -m pytest -q

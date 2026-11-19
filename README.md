@@ -11,7 +11,7 @@ The implementation explores local information propagation, persistent traces, de
 
 Read [`RESEARCH_TRUTH.md`](RESEARCH_TRUTH.md) before quoting results.
 
-The retained 24-cell matrix is historical shared-minibatch evidence. Its byte-hash validation does not establish trajectory isolation or training through the delayed-recall event. Read the [historical evidence boundary](research/HISTORICAL_EVIDENCE_BOUNDARY_20260930.md) before making mechanism claims.
+The retained 24-cell matrix is **retired historical shared-minibatch evidence**. Current-status wording was reconciled on 19 November 2026; see the [source-bound correction](research/CURRENT_EVIDENCE_RECONCILIATION_20261119.md). Its byte-hash validation does not establish trajectory isolation or training through the delayed-recall event. Read the [historical evidence boundary](research/HISTORICAL_EVIDENCE_BOUNDARY_20260930.md) before making mechanism claims.
 
 The public repository contains real source code, tests, experiment runners, stored checkpoints/logs/configs, a delayed-recall mini-suite, historical paper-reference values, and an existing PDF manuscript. These artifacts are not all equivalent forms of evidence.
 
@@ -27,9 +27,11 @@ This directory is a historical evidence/manuscript line, not an independent repl
 See [Canonical lineage](CANONICAL_LINEAGE.md) and use the sibling
 `Fabric-Induced-Memory` repository for new frozen campaigns.
 
-## Canonical execution
+## Historical implementation entry points
 
-Install the repository and test it before research runs:
+These commands document the archived implementation. They do not execute the corrected canonical 40-cell protocol or establish new mechanism evidence. The retired 24-cell campaign must not be restarted to improve its result.
+
+The historical software setup is:
 
 ```bash
 python -m pip install -e . pytest
@@ -68,19 +70,17 @@ python scripts/run_full_suite.py --device auto
 
 The historical `scripts/run_ablation.sh` used flags that were not connected to the maintained experiment CLI. It was replaced rather than allowed to produce misleading paper evidence. Current component ablations use explicit tested switches with frozen semantics.
 
-The current-code matrix and publication path are resumable and fail-closed:
+The historical matrix tooling has artifact-completeness checks. Those checks do not validate trajectory isolation, training horizon or submission readiness. For inspection of already retained artifacts, the documented tools are:
 
 ```bash
-bash scripts/run_ablation.sh
 python scripts/validate_component_ablation_manifest.py
-python scripts/analyze_component_ablations.py
-python scripts/build_component_ablation_paper.py
-python scripts/compile_component_ablation_paper.py
 ```
 
-The complete gated path is `bash scripts/finalize_current_evidence.sh`.
+`scripts/run_ablation.sh` and `scripts/finalize_current_evidence.sh` remain preserved historical source. They are not a current scientific execution recommendation; do not run them to relabel or extend the retired matrix.
 
-The runner atomically checkpoints every completed cell. Reuse requires the same
+The historical analysis and paper-building scripts are also retained. Any reconstruction must use a disposable copy of its recorded source and preserve the archived outputs; rebuilding them does not validate the retired experiment or create corrected evidence.
+
+The historical runner atomically checkpointed every completed cell. Its reuse checks require the same
 frozen protocol, deterministic source-tree identity, and matching hashes for
 the summary, raw rollout result, resolved config, checkpoint, and log. The
 analysis, manuscript, and PDF commands refuse an incomplete matrix.
@@ -102,5 +102,5 @@ For new paper evidence, preserve the Git commit, dirty-tree state, resolved conf
 
 ## Current status
 
-**IMPLEMENTED / EVIDENCE_PARTIAL.** The repository is a substantive research implementation with stored experimental artifacts, but a fresh frozen multi-seed benchmark-and-ablation reproduction is still required before stronger submission claims are justified.
+**HISTORICAL ARCHIVE / CURRENT MECHANISM EVIDENCE INCOMPLETE.** The retained mixed/adverse results remain unchanged. They cannot answer the corrected trajectory-isolated question. No completed canonical 40-cell execution was verified in the checked source/main Actions records, and the preserved paper/PDF are not a refreshed submission-ready package.
 # FIM
