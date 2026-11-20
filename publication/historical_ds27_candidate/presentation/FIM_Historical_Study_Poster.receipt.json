@@ -1,0 +1,21 @@
+{
+  "pdf": "FIM_Historical_Study_Poster.pdf",
+  "pdf_sha256": "ef00e6083ed429040492631e5eeeff72011f5518bf81524746fd9b57b55d0606",
+  "layout": "A3 portrait review draft; final venue dimensions not asserted",
+  "pages": 1,
+  "input_sha256": {
+    "analysis.json": "09d582995d15b16e815089393ae422b9719d8d5ca2f819fa4e6016e7b2ca1fc8",
+    "poster_text.md": "7973a68d278a7e59d8520e96998f943b9b2e214cfb3a51990f7ec9620cf6f35d",
+    "historical_paired_comparisons.png": "970ad3a000455bbd03620d97850332d2a46262b2c2b7c1a4d129783116948e49"
+  },
+  "poster_spec_sha256": "f52a0478d5a990a429c44c152de637f8f74f54a2e481c6fc55015bd03c1b4237",
+  "builder_sha256": "c8784fef2caaa52145b2e7811afd0f4203d908eacd44252740f8e66b50d629f3",
+  "python": "3.12.14",
+  "reportlab": "4.4.9",
+  "scientific_outcome_regeneration": false,
+  "checkpoint_reads": 0,
+  "original_artifacts_modified": false,
+  "submitted": false,
+  "author_list_verified": false,
+  "source_url": "https://github.com/build-the-future-11/FIM/tree/fa3ad83a7f9c59e000764b91c61b9ab8e5842b20/publication/historical_ds27_candidate"
+}
